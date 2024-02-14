@@ -38,8 +38,20 @@ void StackLst::Pop() {
 StackLst::~StackLst(){
     while (head_ != nullptr){
         Node* ptr_head = head_;
-        head_->
+        head_ = head_->next;
+        delete ptr_head;
     }
 }
 
+void StackLst::Clear(){
+    ~StackLst();// подходит при договоре о ПОЛНОЙ отчистке
+}
 
+StackLst::StackLst(const StackLst&){
+    //хз
+}
+
+
+StackLst& StackLst::operator=(const StackLst &obj) {
+    //хз
+}

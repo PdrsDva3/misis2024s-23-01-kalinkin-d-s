@@ -4,7 +4,7 @@
 class Dynarr{
 public:
     Dynarr() = default;
-    Dynarr(std::ptrdiff_t size, float* data) : data_(data) {capacity_ = size; }//--------------
+    Dynarr(std::ptrdiff_t size, float* data) : data_(data) {capacity_ = size; }//--------------неправильно
 
     ~Dynarr() {delete[] data_;}
 

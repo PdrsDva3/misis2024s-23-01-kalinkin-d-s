@@ -23,7 +23,7 @@ public:
 
     [[nodiscard]] Complex& Top();
     [[nodiscard]] const Complex& Top() const;
-    [[nodiscard]] void Clear() noexcept;
+    void Clear() noexcept;
 
 
 
@@ -32,8 +32,6 @@ private:
     std::ptrdiff_t capacity_ = 0;
     int top_ind_ = -1;
     int Size() const {return top_ind_ + 1;}
-    operator[]()
-
 };
 
 

@@ -10,8 +10,17 @@ StackArr::StackArr(const StackArr& rhs)
 }
 
 
-StackArr& StackArr::operator=(const StackArr &obj) {
-    return *this;
+StackArr& StackArr::operator=(const StackArr& obj) {
+    if (this != &obj){
+        if (capacity_ != obj.capacity_){
+            delete[] data_;
+            capacity_ = obj.capacity_;
+            data_ = new Complex[capacity_];
+        }
+        std::copy(obj.data_, obj.data_ + top_ind_ + 1, data_);
+        top_ind_ = obj.top_ind_;
+    }
+    return *this
 }
 
 

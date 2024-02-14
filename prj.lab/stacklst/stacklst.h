@@ -16,6 +16,7 @@ public:
     bool IsEmpty();// 1
     Complex& Top();// 3
     [[nodiscard]] const Complex& Top() const;// 3.1
+
     void Clear();
     StackLst& operator=(const StackLst& obj);
 
