@@ -1,0 +1,1 @@
+add_executable(1931a 1931a.cpp)

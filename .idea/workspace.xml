@@ -10,7 +10,9 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated />
+    <generated>
+      <config projectName="Project" targetName="1931a" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -18,13 +20,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="Push: all">
+    <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="Uodate: stackarr, stacklst">
+      <change afterPath="$PROJECT_DIR$/prj.codeforces/1931a.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/dynar/dynar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/dynar/dynar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/stackarr/stackarr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/stackarr/stackarr.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/stackarr/stackarr.h" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/stackarr/stackarr.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/stacklst/stacklst.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/stacklst/stacklst.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/stacklst/stacklst.h" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/stacklst/stacklst.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.codeforces/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/.cmake/api/v1/reply/index-2024-02-13T15-08-30-0099.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +38,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -62,6 +67,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "CMake Application.1931a.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -78,6 +84,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="1931a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1931a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1931a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -88,7 +106,9 @@
       <updated>1707836336554</updated>
       <workItem from="1707836337655" duration="769000" />
       <workItem from="1707837122410" duration="831000" />
-      <workItem from="1707857641591" duration="9485000" />
+      <workItem from="1707857641591" duration="10061000" />
+      <workItem from="1707950238070" duration="602000" />
+      <workItem from="1708150228555" duration="2669000" />
     </task>
     <task id="LOCAL-00001" summary="Update: CMakeLists.txt">
       <option name="closed" value="true" />
@@ -106,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707836967686</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Uodate: stackarr, stacklst">
+      <option name="closed" value="true" />
+      <created>1707949491940</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707949491941</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +148,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update: CMakeLists.txt" />
     <MESSAGE value="Push: all" />
-    <option name="LAST_COMMIT_MESSAGE" value="Push: all" />
+    <MESSAGE value="Uodate: stackarr, stacklst" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uodate: stackarr, stacklst" />
   </component>
 </project>

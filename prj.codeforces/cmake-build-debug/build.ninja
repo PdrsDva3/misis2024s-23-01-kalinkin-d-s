@@ -40,6 +40,39 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.codeforces/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target 1931a
+
+
+#############################################
+# Order-only phony target for 1931a
+
+build cmake_object_order_depends_target_1931a: phony || CMakeFiles/1931a.dir
+
+build CMakeFiles/1931a.dir/1931a.cpp.obj: CXX_COMPILER__1931a_unscanned_Debug C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.codeforces/1931a.cpp || cmake_object_order_depends_target_1931a
+  DEP_FILE = CMakeFiles\1931a.dir\1931a.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\1931a.dir
+  OBJECT_FILE_DIR = CMakeFiles\1931a.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1931a
+
+
+#############################################
+# Link the executable 1931a.exe
+
+build 1931a.exe: CXX_EXECUTABLE_LINKER__1931a_Debug CMakeFiles/1931a.dir/1931a.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\1931a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1931a.exe
+  TARGET_IMPLIB = lib1931a.dll.a
+  TARGET_PDB = 1931a.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -66,6 +99,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build 1931a: phony 1931a.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -74,7 +109,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.codeforces/cmake-build-debug
 
-build all: phony
+build all: phony 1931a.exe
 
 # =============================================================================
 # Unknown Build Time Dependencies.
