@@ -12,6 +12,7 @@
   <component name="CMakeRunConfigurationManager">
     <generated>
       <config projectName="Project" targetName="1931a" />
+      <config projectName="Project" targetName="1931b" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -20,11 +21,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="Uodate: stackarr, stacklst">
-      <change afterPath="$PROJECT_DIR$/prj.codeforces/1931a.cpp" afterDir="false" />
+    <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="Add codeforces">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prj.codeforces/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/.cmake/api/v1/reply/index-2024-02-13T15-08-30-0099.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-76b330c7ba07dfaa47bf.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
@@ -68,6 +68,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "CMake Application.1931a.executor": "Run",
+    "CMake Application.1931b.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -84,8 +85,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="CMake Application.1931b">
     <configuration name="1931a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1931a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1931a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1931b" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1931b" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1931b">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -95,6 +101,10 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="CMake Application.1931a" />
+      <item itemvalue="CMake Application.1931b" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -108,7 +118,7 @@
       <workItem from="1707837122410" duration="831000" />
       <workItem from="1707857641591" duration="10061000" />
       <workItem from="1707950238070" duration="602000" />
-      <workItem from="1708150228555" duration="2669000" />
+      <workItem from="1708150228555" duration="6841000" />
     </task>
     <task id="LOCAL-00001" summary="Update: CMakeLists.txt">
       <option name="closed" value="true" />
@@ -134,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707949491941</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add codeforces">
+      <option name="closed" value="true" />
+      <created>1708154409773</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708154409773</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +167,7 @@
     <MESSAGE value="Update: CMakeLists.txt" />
     <MESSAGE value="Push: all" />
     <MESSAGE value="Uodate: stackarr, stacklst" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uodate: stackarr, stacklst" />
+    <MESSAGE value="Add codeforces" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add codeforces" />
   </component>
 </project>

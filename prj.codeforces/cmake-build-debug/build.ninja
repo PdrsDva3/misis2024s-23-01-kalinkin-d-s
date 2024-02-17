@@ -73,6 +73,39 @@ build 1931a.exe: CXX_EXECUTABLE_LINKER__1931a_Debug CMakeFiles/1931a.dir/1931a.c
   TARGET_IMPLIB = lib1931a.dll.a
   TARGET_PDB = 1931a.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 1931b
+
+
+#############################################
+# Order-only phony target for 1931b
+
+build cmake_object_order_depends_target_1931b: phony || CMakeFiles/1931b.dir
+
+build CMakeFiles/1931b.dir/1931b.cpp.obj: CXX_COMPILER__1931b_unscanned_Debug C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.codeforces/1931b.cpp || cmake_object_order_depends_target_1931b
+  DEP_FILE = CMakeFiles\1931b.dir\1931b.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\1931b.dir
+  OBJECT_FILE_DIR = CMakeFiles\1931b.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1931b
+
+
+#############################################
+# Link the executable 1931b.exe
+
+build 1931b.exe: CXX_EXECUTABLE_LINKER__1931b_Debug CMakeFiles/1931b.dir/1931b.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\1931b.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1931b.exe
+  TARGET_IMPLIB = lib1931b.dll.a
+  TARGET_PDB = 1931b.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -101,6 +134,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build 1931a: phony 1931a.exe
 
+build 1931b: phony 1931b.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -109,7 +144,7 @@ build 1931a: phony 1931a.exe
 #############################################
 # Folder: C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.codeforces/cmake-build-debug
 
-build all: phony 1931a.exe
+build all: phony 1931a.exe 1931b.exe
 
 # =============================================================================
 # Unknown Build Time Dependencies.
