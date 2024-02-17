@@ -22,20 +22,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="Add codeforces">
-      <change afterPath="$PROJECT_DIR$/prj.codeforces/1931с.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ea2daf1d6f75f204cf78.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/.cmake/api/v1/reply/index-2024-02-17T07-21-17-0545.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/cmake-build-debug/build.ninja" afterDir="false" />
-    </list>
+    <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="Add codeforces" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +113,7 @@
       <workItem from="1707857641591" duration="10061000" />
       <workItem from="1707950238070" duration="602000" />
       <workItem from="1708150228555" duration="7776000" />
-      <workItem from="1708172967026" duration="311000" />
+      <workItem from="1708172967026" duration="744000" />
     </task>
     <task id="LOCAL-00001" summary="Update: CMakeLists.txt">
       <option name="closed" value="true" />
@@ -184,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708160673750</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add codeforces">
+      <option name="closed" value="true" />
+      <created>1708173702587</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708173702587</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
