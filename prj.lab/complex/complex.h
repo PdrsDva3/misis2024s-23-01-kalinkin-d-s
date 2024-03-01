@@ -41,9 +41,13 @@ struct Complex{
     static const char rightBrace{'}'};
 };
 
-inline std::ostream& operator<<(std::ostream& ostrm, const Complex& rhs);
+inline std::ostream& operator<<(std::ostream& ostrm, const Complex& rhs){
+    return rhs.writeTo(ostrm);
+}
 
-inline std::istream& operator>>(std::istream& istrm, Complex& rhs);
+inline std::istream& operator>>(std::istream& istrm, Complex& rhs){
+    return rhs.readFrom(istrm);
+}
 
 Complex operator+(const Complex& lhs, const Complex& rhs);
 Complex operator+(const Complex& lhs, const double& rhs);

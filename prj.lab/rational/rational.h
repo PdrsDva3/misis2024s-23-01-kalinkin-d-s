@@ -10,13 +10,13 @@ public:
     Rational() = default;
     Rational(const int64_t n, const int64_t d) : num_(n), den_(d) {fix();}
     explicit Rational(int64_t n) : Rational(n, 1) {}
-    ~Rational() = default; // деструктор (сборщик мусора)
+    ~Rational() = default; // деструктор (сборщик мусора) спасибо, денис из прошлого
     Rational(const Rational& rhs) = default;
 
     Rational& operator=(const Rational& rhs) {num_ = rhs.num_; den_ = rhs.den_; return *this;}
 
-    std::int64_t num() const { return num_; }
-    std::int64_t den() const { return den_; }
+    [[nodiscard]] std::int64_t num() const noexcept { return num_; }
+    [[nodiscard]] std::int64_t den() const noexcept { return den_; }
 
     bool operator==(const Rational& rhs) const {return num_*rhs.den_ == rhs.num_*den_;}
     bool operator==(const int64_t rhs) const {return operator==(Rational(rhs));}

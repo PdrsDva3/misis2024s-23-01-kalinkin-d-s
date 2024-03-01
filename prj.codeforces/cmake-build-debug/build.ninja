@@ -106,39 +106,6 @@ build 1931b.exe: CXX_EXECUTABLE_LINKER__1931b_Debug CMakeFiles/1931b.dir/1931b.c
   TARGET_IMPLIB = lib1931b.dll.a
   TARGET_PDB = 1931b.exe.dbg
 
-# =============================================================================
-# Object build statements for EXECUTABLE target 1931ñ
-
-
-#############################################
-# Order-only phony target for 1931ñ
-
-build cmake_object_order_depends_target_1931ñ: phony || CMakeFiles/1931ñ.dir
-
-build CMakeFiles/1931ñ.dir/1931ñ.cpp.obj: CXX_COMPILER__1931.ffffffd1.ffffff81_unscanned_Debug C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.codeforces/1931ñ.cpp || cmake_object_order_depends_target_1931ñ
-  DEP_FILE = CMakeFiles\1931ñ.dir\1931ñ.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\1931ñ.dir
-  OBJECT_FILE_DIR = CMakeFiles\1931ñ.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target 1931ñ
-
-
-#############################################
-# Link the executable 1931ñ.exe
-
-build 1931ñ.exe: CXX_EXECUTABLE_LINKER__1931.ffffffd1.ffffff81_Debug CMakeFiles/1931ñ.dir/1931ñ.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\1931ñ.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = 1931ñ.exe
-  TARGET_IMPLIB = lib1931ñ.dll.a
-  TARGET_PDB = 1931ñ.exe.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -169,8 +136,6 @@ build 1931a: phony 1931a.exe
 
 build 1931b: phony 1931b.exe
 
-build 1931ñ: phony 1931ñ.exe
-
 # =============================================================================
 # Folder targets.
 
@@ -179,7 +144,7 @@ build 1931ñ: phony 1931ñ.exe
 #############################################
 # Folder: C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.codeforces/cmake-build-debug
 
-build all: phony 1931a.exe 1931b.exe 1931ñ.exe
+build all: phony 1931a.exe 1931b.exe
 
 # =============================================================================
 # Unknown Build Time Dependencies.

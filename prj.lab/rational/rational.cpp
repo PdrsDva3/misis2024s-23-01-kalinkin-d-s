@@ -5,24 +5,33 @@ std::ostream& Rational::writeTo(std::ostream& ostrm) const{
     return ostrm;
 }
 
-std::istream& Rational::readFrom(std::istream& istrm){
-    int64_t num(0);
-    char sep_(0);
-    int64_t den(0);
-    istrm >> num >> sep_ >> den;
-    if (istrm.good()){
-        if (sep == sep_) {
-            num_ = num;
-            den_ = den;
-        } else {
-            istrm.setstate(std::ios_base::failbit);
+std::istream& Rational::readFrom(std::istream& istrm)
+{
+    int64_t num = 0;
+    char delimiter = 0;
+    int64_t den = 0;
+    int64_t check_digits = 0;
+    istrm >> num;
+    istrm.get(delimiter);
+//    смотрим, но не вытаскиваем следующий элемент из потока
+    check_digits = istrm.peek();
+//    проверяем, если это НЕ число, то файлбит
+    istrm >> den;
+    if (check_digits > '9' || check_digits < '0') {
+        istrm.setstate(std::ios_base::failbit);
+    } else {
+        if (istrm.good() || istrm.eof()) {
+            if (den > 0 && delimiter == sep) {
+                num_ = num;
+                den_ = den;
+                fix();
+            }
+            else {
+                istrm.setstate(std::ios_base::failbit);
+            }
         }
     }
-    if (den_ == 0){
-        throw std::runtime_error("Division by zero!");
-    }else{
-        return istrm;
-    }
+    return istrm;
 }
 
 
@@ -57,6 +66,9 @@ int64_t nodf(int64_t n, int64_t d){
 
 
 void Rational::fix(){
+    if (den_ == 0){
+        throw std::runtime_error("Division by zero");
+    }
     int sign_n;
     int sign_d;
     if (num_ < 0){

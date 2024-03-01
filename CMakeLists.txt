@@ -12,9 +12,10 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELWITHDEBINFO bin.relwithdbg)
 
 option(BUILD_WITH_CODEFORCES "Build prj.codeforces targets" off)
 
-if (BUILD_WITH_CODEFORCES)
-    add_subdirectory(prj.codeforces)
-endif()
+#if (BUILD_WITH_CODEFORCES)
+#    add_subdirectory(prj.codeforces)
+#endif()
 
+add_subdirectory(prj.codeforces)
 add_subdirectory(prj.lab)
 add_subdirectory(prj.test)

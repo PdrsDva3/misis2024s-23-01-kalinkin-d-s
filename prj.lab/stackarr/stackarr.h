@@ -21,7 +21,7 @@ public:
     void Pop() noexcept;
     [[nodiscard]] bool IsEmpty() noexcept;
 
-    [[nodiscard]] Complex& Top();
+    Complex& Top();
     [[nodiscard]] const Complex& Top() const;
     void Clear() noexcept;
 

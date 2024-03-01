@@ -1,5 +1,4 @@
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.codeforces/cmake-build-debug/CMakeFiles/1931a.dir
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.codeforces/cmake-build-debug/CMakeFiles/1931b.dir
-C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.codeforces/cmake-build-debug/CMakeFiles/1931с.dir
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.codeforces/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.codeforces/cmake-build-debug/CMakeFiles/rebuild_cache.dir

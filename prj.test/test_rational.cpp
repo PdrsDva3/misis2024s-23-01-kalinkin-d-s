@@ -2,135 +2,104 @@
 #include "doctest.h"
 #include <rational/rational.h>
 
-TEST_CASE("rational ctor"){
-    Rational first;
-    CHECK(0 == first.num());
-    CHECK(1 == first.den());
+TEST_CASE("rational ctor") {
+    Rational r_def;
+    CHECK(0 == r_def.num());
+    CHECK(1 == r_def.den());
 
-    Rational second(2);
-    CHECK(2 == second.num());
-    CHECK(1 == second.den());
+    Rational r_int(3);
+    CHECK(3 == r_int.num());
+    CHECK(1 == r_int.den());
 
-    Rational third(36, 42);
-    CHECK(6 == third.num());
-    CHECK(7 == third.den());
+    CHECK_THROWS(Rational(1, 0));
+}
 
-    //=================================
+TEST_CASE("rational arithmetic") {
+    Rational r_positive(3, 2);
+    Rational r_negative(-2, 6);
+    Rational sum;
+    sum = r_positive + r_negative;
 
-    Rational fourth(1, 9);
-    Rational ans;
-    ans = third + fourth;
-    CHECK(61 == ans.num());
-    CHECK(63 == ans.den());
+    CHECK(7 == sum.num());
+    CHECK(6 == sum.den());
 
-    ans = second + fourth;
-    CHECK(19 == ans.num());
-    CHECK(9 == ans.den());
+    sum = sum + 5;
 
-    ans = fourth + second;
-    CHECK(19 == ans.num());
-    CHECK(9 == ans.den());
+    CHECK(37 == sum.num());
+    CHECK(6 == sum.den());
 
-    third += fourth;
-    CHECK(61 == third.num());
-    CHECK(63 == third.den());
+    Rational dif;
+    dif = r_positive - r_negative;
 
-    third += second;
-    CHECK(187 == third.num());
-    CHECK(63 == third.den());
+    CHECK(11 == dif.num());
+    CHECK(6 == dif.den());
 
-    second += third;
-    CHECK(313 == second.num());
-    CHECK(63 == second.den());
+    dif = dif - 1;
 
-    //=================================
+    CHECK(5 == dif.num());
+    CHECK(6 == dif.den());
 
-    Rational mt1(3, 7);
-    Rational mt2(2, 9);
-    Rational mt3(5);
-    Rational res;
+    Rational prod;
+    prod = r_negative * r_positive;
 
-    res = mt1 * mt2;
-    CHECK(2 == res.num());
-    CHECK(21 == res.den());
+    CHECK(-1 == prod.num());
+    CHECK(2 == prod.den());
 
-    res = mt1 * mt3;
-    CHECK(15 == res.num());
-    CHECK(7 == res.den());
+    prod = prod * (-2);
 
-    res = mt3 * mt1;
-    CHECK(15 == res.num());
-    CHECK(7 == res.den());
+    CHECK(1 == prod.num());
+    CHECK(1 == prod.den());
 
-    mt1*= mt2;
-    CHECK(2 == mt1.num());
-    CHECK(21 == mt1.den());
+    Rational div;
+    div = r_positive/r_negative;
 
-    mt2*= mt3;
-    CHECK(10 == mt2.num());
-    CHECK(9 == mt2.den());
+    CHECK(-9 == div.num());
+    CHECK(2 == div.den());
 
-    mt3 *= mt1;
-    CHECK(10 == mt3.num());
-    CHECK(21 == mt3.den());
+    div = div / (-3);
 
-    //==================================
+    CHECK(3 == div.num());
+    CHECK(2 == div.den());
 
-    Rational del1(2, 3);
-    Rational del2(3, 7);
-    Rational del3(4);
+    Rational r_zero(0, 1);
 
-    res = del1 / del2;
-    CHECK(14 == res.num());
-    CHECK(9 == res.den());
+    CHECK_THROWS(Rational(1, 0));
+    CHECK_THROWS(r_negative / r_zero);
+}
 
-    res = del1 / del3;
-    CHECK(1 == res.num());
-    CHECK(6 == res.den());
+TEST_CASE("rational IO") {
+    std::istringstream istream("2/3");
+    Rational reading;
 
-    res = del3 / del2;
-    CHECK(28 == res.num());
-    CHECK(3 == res.den());
+    istream >> reading;
+    CHECK_FALSE(istream.fail());
+    CHECK(reading.num() == 2);
+    CHECK(reading.den() == 3);
 
-    del1 /= del2;
-    CHECK(14 == del1.num());
-    CHECK(9 == del1.den());
+    std::istringstream istream2("16/8");
+    istream2 >> reading;
+    CHECK(reading.num() == 2);
+    CHECK(reading.den() == 1);
 
-    del2 /= del3;
-    CHECK(3 == del2.num());
-    CHECK(28 == del2.den());
+    std::istringstream istream3("    7/8");
+    istream3 >> reading;
+    CHECK(reading.num() == 7);
+    CHECK(reading.den() == 8);
 
-    del3 /= del1;
-    CHECK(18 == del3.num());
-    CHECK(7 == del3.den());
+    std::istringstream istream4("7/ 8");
+    istream4 >> reading;
+    CHECK(istream4.fail());
 
-    //==============================
-    Rational ded1(1, 3);
-    Rational ded2(2, 5);
-    Rational ded3(2);
-    bool logic;
+    std::istringstream istream5("4/-54");
+    istream5 >> reading;
+    CHECK(istream5.fail());
 
-    logic = ded1 > ded2;
-    CHECK(false == logic);
+    std::ostringstream ostream1;
 
-    logic = ded3 > ded2;
-    CHECK(true == logic);
+    ostream1 << Rational(2, 3);
+    CHECK(ostream1.str() == "2/3");
 
-    Rational ded11(1, 3);
-    logic = (ded1 == ded11);
-    CHECK(true == logic);
-
-    //ded1 = 1/3; ded2 = 2/5; ded3 = 2 !!! <----
-    res = ded1 - ded2;
-    CHECK(-1 == res.num());
-    CHECK(15 == res.den());
-
-    res = ded2 - ded3;
-    CHECK(-8 == res.num());
-    CHECK(5 == res.den());
-
-    res = ded3 - ded1;
-    CHECK(5 == res.num());
-    CHECK(3 == res.den());
-    
+    std::ostringstream ostream2;
+    ostream2 << Rational(-2, 3);
+    CHECK(ostream2.str() == "-2/3");
 }

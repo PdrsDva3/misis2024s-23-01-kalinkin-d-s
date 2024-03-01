@@ -1,16 +1,93 @@
-#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include "doctest.h"
-#include "complex\complex.h"
 #include <iostream>
+#include <complex/complex.h>
 
-TEST_CASE("complex ctor"){
-    Complex first;
+void TestDivOp() {
+    Complex rhs(-2, 1);
+    Complex lhs(1, -1);
+    Complex ans;
 
-    CHECK(0.0 == first.realf());
-    CHECK(0.0 == first.imagf());
+    Complex correct(-1.5, -0.5);
 
-    Complex second({1.0, 8.0});
-    Complex third({9});
+    ans =  rhs / lhs;
 
-//    CHECK();
+    if (ans == correct) {
+        std::cout << lhs << " / " << rhs << " = " << correct << " " << "SUCCES" << std::endl;
+        return;
+    }
+
+    std::cout << lhs << " / " << rhs << " = " << ans << " != " << correct << " " << "FAILED" << std::endl;
+}
+
+void TestSumOp() {
+    Complex rhs(-2, 1);
+    Complex lhs(1, -1);
+    Complex ans;
+
+    Complex correct(-1, 0);
+
+    ans = rhs + lhs;
+
+    if (ans == correct) {
+        std::cout << lhs << " + " << rhs << " = " << correct << " " << "SUCCES" << std::endl;
+        return;
+    }
+
+    std::cout << lhs << " + " << rhs << " = " << ans << " != " << correct << " " << "FAILED" << std::endl;
+}
+
+void TestSubOp() {
+    Complex rhs(-2, 1);
+    Complex lhs(1, -1);
+    Complex ans;
+
+    Complex correct(-3, 2);
+
+    ans = rhs - lhs;
+
+    if (ans == correct) {
+        std::cout << lhs << " - " << rhs << " = " << correct << " " << "SUCCES" << std::endl;
+        return;
+    }
+
+    std::cout << lhs << " + " << rhs << " = " << ans << " != " << correct << " " << "FAILED" << std::endl;
+}
+
+void TestMulOp() {
+    Complex rhs(-2, 1);
+    Complex lhs(1, -1);
+    Complex ans;
+
+    Complex correct(-1, 3);
+
+    ans = rhs * lhs;
+
+    if (ans == correct) {
+        std::cout << lhs << " * " << rhs << " = " << correct << " " << "SUCCES" << std::endl;
+        return;
+    }
+
+    std::cout << lhs << " * " << rhs << " = " << ans << " != " << correct << " " << "FAILED" << std::endl;
+}
+
+void TestZeroDivision() {
+    Complex rhs(-2, 1);
+    Complex lhs(0, 0);
+
+    try {
+        rhs /= lhs;
+    }
+    catch (std::invalid_argument& exception) {
+        std::cout << "DIVIDING BY ZERO: " << rhs << " / " << lhs << " CATCHED: " << exception.what() << std::endl;
+    }
+}
+
+int main()
+{
+    TestDivOp();
+    TestSumOp();
+    TestSubOp();
+    TestMulOp();
+    TestZeroDivision();
+
+    return 0;
 }

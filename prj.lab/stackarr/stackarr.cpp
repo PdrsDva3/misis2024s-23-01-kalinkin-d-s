@@ -11,16 +11,21 @@ StackArr::StackArr(const StackArr& rhs)
 
 
 StackArr& StackArr::operator=(const StackArr& obj) {
-    if (this != &obj){
-        if (capacity_ != obj.capacity_){
-            delete[] data_;
-            capacity_ = obj.capacity_;
-            data_ = new Complex[capacity_];
+    if (this != &obj) {
+        // Если размеры стеков отличаются, изменяем размер текущего стека
+        if (capacity_ != obj.capacity_) {
+            delete[] data_; // Освобождаем старую память
+            capacity_ = obj.capacity_; // Обновляем размер
+            data_ = new Complex[capacity_]; // Выделяем новую память
+            if (!data_) {
+                throw std::bad_alloc(); // Проверяем успешность выделения памяти
+            }
         }
-        std::copy(obj.data_, obj.data_ + top_ind_ + 1, data_);
-        top_ind_ = obj.top_ind_;
+        // Копируем данные из obj в текущий объект
+        std::copy(obj.data_, obj.data_ + obj.top_ind_ + 1, data_);
+        top_ind_ = obj.top_ind_; // Обновляем индекс вершины
     }
-    return *this
+    return *this;
 }
 
 
