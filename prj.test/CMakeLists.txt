@@ -9,3 +9,6 @@ target_link_libraries(test_stackarr stackarr complex)
 
 add_executable(test_stacklst test_stacklst.cpp)
 target_link_libraries(test_stacklst stacklst complex)
+
+add_executable(test_queuelst test_queuelst.cpp)
+target_link_libraries(test_queuelst queuelst complex)

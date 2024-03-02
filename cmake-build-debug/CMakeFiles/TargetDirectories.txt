@@ -65,6 +65,7 @@ C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.t
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.test/CMakeFiles/test_rational.dir
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.test/CMakeFiles/test_stackarr.dir
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.test/CMakeFiles/test_stacklst.dir
+C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.test/CMakeFiles/test_queuelst.dir
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.test/CMakeFiles/edit_cache.dir
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.test/CMakeFiles/rebuild_cache.dir
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.test/CMakeFiles/list_install_components.dir

@@ -7,18 +7,20 @@
 
 
 class QueueLst {
+public:
     QueueLst() = default;
-    QueueLst(const QueueLst&);
+    QueueLst(const QueueLst& rhs);
     ~QueueLst();
 
-    void Pop();// 4
-    void Push(const Complex& elem);// 2
-    bool IsEmpty();// 1
-    Complex& Top();// 3
-    const Complex& Top() const;// 3.1
+    void Pop();
+    void Push(const Complex& elem);
+    bool IsEmpty() const noexcept;
+
+    Complex& Top();
+    const Complex& Top() const;
 
     void Clear();
-    QueueLst& operator=(const QueueLst& obj);
+    QueueLst& operator=(const QueueLst& rhs);
 
 private:
     struct Node{

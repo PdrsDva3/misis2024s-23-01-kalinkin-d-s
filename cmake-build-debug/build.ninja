@@ -1098,6 +1098,40 @@ build prj.test/bin.dbg/test_stacklst.exe: CXX_EXECUTABLE_LINKER__test_stacklst_D
   TARGET_IMPLIB = prj.test\libtest_stacklst.dll.a
   TARGET_PDB = test_stacklst.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target test_queuelst
+
+
+#############################################
+# Order-only phony target for test_queuelst
+
+build cmake_object_order_depends_target_test_queuelst: phony || cmake_object_order_depends_target_complex cmake_object_order_depends_target_queuelst
+
+build prj.test/CMakeFiles/test_queuelst.dir/test_queuelst.cpp.obj: CXX_COMPILER__test_queuelst_unscanned_Debug C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.test/test_queuelst.cpp || cmake_object_order_depends_target_test_queuelst
+  DEP_FILE = prj.test\CMakeFiles\test_queuelst.dir\test_queuelst.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuelst/.. -IC:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/complex/..
+  OBJECT_DIR = prj.test\CMakeFiles\test_queuelst.dir
+  OBJECT_FILE_DIR = prj.test\CMakeFiles\test_queuelst.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_queuelst
+
+
+#############################################
+# Link the executable prj.test\bin.dbg\test_queuelst.exe
+
+build prj.test/bin.dbg/test_queuelst.exe: CXX_EXECUTABLE_LINKER__test_queuelst_Debug prj.test/CMakeFiles/test_queuelst.dir/test_queuelst.cpp.obj | prj.lab/queuelst/libqueuelst.a prj.lab/complex/libcomplex.a || prj.lab/complex/libcomplex.a prj.lab/queuelst/libqueuelst.a
+  FLAGS = -g
+  LINK_LIBRARIES = prj.lab/queuelst/libqueuelst.a  prj.lab/complex/libcomplex.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = prj.test\CMakeFiles\test_queuelst.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = prj.test\bin.dbg\test_queuelst.exe
+  TARGET_IMPLIB = prj.test\libtest_queuelst.dll.a
+  TARGET_PDB = test_queuelst.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -1206,6 +1240,10 @@ build test_complex: phony prj.test/bin.dbg/test_complex.exe
 
 build test_complex.exe: phony prj.test/bin.dbg/test_complex.exe
 
+build test_queuelst: phony prj.test/bin.dbg/test_queuelst.exe
+
+build test_queuelst.exe: phony prj.test/bin.dbg/test_queuelst.exe
+
 build test_rational: phony prj.test/bin.dbg/test_rational.exe
 
 build test_rational.exe: phony prj.test/bin.dbg/test_rational.exe
@@ -1289,7 +1327,7 @@ build prj.lab/stacklst/all: phony prj.lab/stacklst/libstacklst.a
 #############################################
 # Folder: C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.test
 
-build prj.test/all: phony prj.test/bin.dbg/test_complex.exe prj.test/bin.dbg/test_rational.exe prj.test/bin.dbg/test_stackarr.exe prj.test/bin.dbg/test_stacklst.exe
+build prj.test/all: phony prj.test/bin.dbg/test_complex.exe prj.test/bin.dbg/test_rational.exe prj.test/bin.dbg/test_stackarr.exe prj.test/bin.dbg/test_stacklst.exe prj.test/bin.dbg/test_queuelst.exe
 
 # =============================================================================
 # Built-in targets
