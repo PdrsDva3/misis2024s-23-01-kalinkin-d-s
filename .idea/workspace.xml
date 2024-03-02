@@ -18,8 +18,8 @@
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="1931a" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_rational" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="1931b" />
+      <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="dynarr" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="1931c" />
-      <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="dynar" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_complex" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="stackarr" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_queuelst" />
@@ -33,10 +33,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="Debug Complex, Rational; Rewrite StackLst; Add tests">
+    <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="add queue tests">
+      <change afterPath="$PROJECT_DIR$/prj.lab/dynarr/dynarr.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prj.lab/dynarr/dynarr.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ac3d403a028f57dcc488.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-02-28T12-18-59-0094.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-34973ce01884e52c6cd4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-144149de366309c16742.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-prj.lab.dynar-Debug-b1973e7607bbbe0e5c1b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-dynar-Debug-ea6e75f4a9d42df45d1c.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
@@ -44,9 +48,11 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/queuelst/queuelst.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/queuelst/queuelst.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/queuelst/queuelst.h" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/queuelst/queuelst.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.test/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/prj.lab/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/prj.lab/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.lab/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.lab/dynar/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/dynarr/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.lab/dynar/dynar.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.lab/dynar/dynar.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +135,7 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in test_queuelst.cpp" type="CMakeDoctestTestRunConfigurationType" factoryName="doctest Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="test_queuelst" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="test_queuelst" TEST_PATTERN="[#*test_queuelst.cpp]" TEST_MODE="PATTERN">
+    <configuration name="All in test_queuelst.cpp" type="CMakeDoctestTestRunConfigurationType" factoryName="doctest Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="test_queuelst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="test_queuelst" TEST_PATTERN="[#*test_queuelst.cpp]" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -203,7 +209,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dynar" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="dynar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="dynar">
+    <configuration name="dynarr" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="dynarr" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -233,7 +239,7 @@
       <item itemvalue="CMake Application.1931b" />
       <item itemvalue="CMake Application.1931c" />
       <item itemvalue="CMake Application.complex" />
-      <item itemvalue="CMake Application.dynar" />
+      <item itemvalue="CMake Application.dynarr" />
       <item itemvalue="CMake Application.queuelst" />
       <item itemvalue="CMake Application.rational" />
       <item itemvalue="CMake Application.stackarr" />
@@ -283,7 +289,7 @@
       <workItem from="1709122487804" duration="2366000" />
       <workItem from="1709286064093" duration="4905000" />
       <workItem from="1709366814822" duration="2222000" />
-      <workItem from="1709370659539" duration="461000" />
+      <workItem from="1709370659539" duration="2844000" />
     </task>
     <task id="LOCAL-00001" summary="Update: CMakeLists.txt">
       <option name="closed" value="true" />
@@ -381,7 +387,47 @@
       <option name="project" value="LOCAL" />
       <updated>1709290759905</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Update queuelst library">
+      <option name="closed" value="true" />
+      <created>1709371163118</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709371163118</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add queue tests">
+      <option name="closed" value="true" />
+      <created>1709371199876</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709371199876</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add queue tests">
+      <option name="closed" value="true" />
+      <created>1709371206027</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709371206027</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add queue tests">
+      <option name="closed" value="true" />
+      <created>1709371215707</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709371215707</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add queue tests">
+      <option name="closed" value="true" />
+      <created>1709371218276</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709371218276</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,6 +444,8 @@
     <MESSAGE value="Uodate: stackarr, stacklst" />
     <MESSAGE value="Add codeforces" />
     <MESSAGE value="Debug Complex, Rational; Rewrite StackLst; Add tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug Complex, Rational; Rewrite StackLst; Add tests" />
+    <MESSAGE value="Update queuelst library" />
+    <MESSAGE value="add queue tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add queue tests" />
   </component>
 </project>

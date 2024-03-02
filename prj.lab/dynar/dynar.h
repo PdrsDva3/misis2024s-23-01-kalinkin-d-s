@@ -1,8 +1,0 @@
-//
-// Created by Lol on 06.02.2024.
-//
-
-#ifndef MISIS2023F_23_01_KALINKIN_D_S_DYNAR_H
-#define MISIS2023F_23_01_KALINKIN_D_S_DYNAR_H
-//текст
-#endif //MISIS2023F_23_01_KALINKIN_D_S_DYNAR_H
