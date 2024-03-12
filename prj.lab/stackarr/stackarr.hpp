@@ -5,7 +5,7 @@
 #ifndef MISIS2023F_23_01_KALINKIN_D_S_STACKARR_H
 #define MISIS2023F_23_01_KALINKIN_D_S_STACKARR_H
 
-#include <complex/complex.h>
+#include "complex/complex.hpp"
 #include <cstddef>
 #include <iostream>
 

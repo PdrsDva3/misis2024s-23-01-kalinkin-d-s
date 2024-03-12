@@ -1,9 +1,7 @@
 #ifndef MISIS2024S_23_01_KALINKIN_D_S_QueueLst_H
 #define MISIS2024S_23_01_KALINKIN_D_S_QueueLst_H
 
-#include <complex/complex.h>
-#include <cstddef>
-#include <iosfwd>
+#include "complex/complex.hpp"
 
 
 class QueueLst {

@@ -52,6 +52,13 @@ C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.l
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/queuelst/CMakeFiles/install.dir
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/queuelst/CMakeFiles/install/local.dir
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/queuelst/CMakeFiles/install/strip.dir
+C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/queuelstpr/CMakeFiles/queuelstpr.dir
+C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/queuelstpr/CMakeFiles/edit_cache.dir
+C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/queuelstpr/CMakeFiles/rebuild_cache.dir
+C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/queuelstpr/CMakeFiles/list_install_components.dir
+C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/queuelstpr/CMakeFiles/install.dir
+C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/queuelstpr/CMakeFiles/install/local.dir
+C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/queuelstpr/CMakeFiles/install/strip.dir
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.test/CMakeFiles/test_complex.dir
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.test/CMakeFiles/test_rational.dir
 C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.test/CMakeFiles/test_stackarr.dir

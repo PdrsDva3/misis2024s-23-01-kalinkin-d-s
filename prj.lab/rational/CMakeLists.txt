@@ -1,4 +1,4 @@
-add_library(rational rational.cpp rational.h)
+add_library(rational rational.cpp rational.hpp)
 
 set_property(TARGET rational PROPERTY CXX_STANDARD 20)
 target_include_directories(rational PUBLIC

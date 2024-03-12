@@ -1,9 +1,9 @@
 # ninja log v5
 0	772	7301282443993488	prj.codeforces/CMakeFiles/1931c.dir/1931ñ.cpp.obj	b20dd4fc597de66d
-4	3370	7306845419080204	prj.lab/complex/CMakeFiles/complex.dir/complex.cpp.obj	652b8d6b51d3404a
+7	4025	7319469079105745	prj.lab/complex/CMakeFiles/complex.dir/complex.cpp.obj	652b8d6b51d3404a
 775	1022	7301282446446348	prj.codeforces/bin.dbg/1931c.exe	f2c67c5bee35533a
 5	903	7309937861493740	prj.lab/stacklst/CMakeFiles/stacklst.dir/stacklst.cpp.obj	556ba2bbd534224f
-3371	3574	7306845421239027	prj.lab/complex/libcomplex.a	761702b1dfcb9817
+11	863	7319469475664347	prj.lab/complex/libcomplex.a	761702b1dfcb9817
 1100	1946	7308273436035119	prj.test/bin.dbg/test_stackarr.exe	b851c70d194a7ff2
 7	9913	7310738999974369	prj.test/CMakeFiles/test_stacklst.dir/test_stacklst.cpp.obj	9e9a7a24784d5c98
 904	1026	7309937862720087	prj.lab/stacklst/libstacklst.a	195063166ff4b88c
@@ -13,11 +13,15 @@
 17	9056	7308257506392643	prj.test/CMakeFiles/test_stackarr.dir/test_stackarr.cpp.obj	3230262fe0d21b9
 6	874	7308259594840336	prj.test/CMakeFiles/test_complex.dir/test_complex.cpp.obj	a6ea34f908943d8c
 875	1135	7308259597356015	prj.test/bin.dbg/test_complex.exe	b0143a8db7ebd8f0
-7	3645	7310739708978593	prj.lab/queuelst/CMakeFiles/queuelst.dir/queuelst.cpp.obj	2d958fc3dd56f30e
+8	2879	7313372875262970	prj.lab/queuelst/CMakeFiles/queuelst.dir/queuelst.cpp.obj	2d958fc3dd56f30e
 7	2147	7308268699444961	prj.lab/rational/CMakeFiles/rational.dir/rational.cpp.obj	78f6f77e28dd742d
 2148	2314	7308268701193182	prj.lab/rational/librational.a	c1bb12d7ab7fb738
 6	5000	7308269378029946	prj.test/CMakeFiles/test_rational.dir/test_rational.cpp.obj	87634e640f246cb
 5001	5808	7308269386151032	prj.test/bin.dbg/test_rational.exe	32b91aaf2e758e50
-3645	3812	7310739710663779	prj.lab/queuelst/libqueuelst.a	58a19b8ea9877395
-8	3845	7310742853435862	prj.test/CMakeFiles/test_queuelst.dir/test_queuelst.cpp.obj	7a01e2533b27f33b
-3846	4630	7310742861312826	prj.test/bin.dbg/test_queuelst.exe	2bc9f5b1e2534d96
+2880	9685	7313372946814690	prj.lab/queuelst/libqueuelst.a	58a19b8ea9877395
+100	9907	7319469137832610	prj.test/CMakeFiles/test_queuelst.dir/test_queuelst.cpp.obj	77067a37fbe19b0a
+12105	13651	7313372986365927	prj.test/bin.dbg/test_queuelst.exe	2bc9f5b1e2534d96
+9	3864	7319471243183174	prj.lab/stacklst/CMakeFiles/stacklst.dir/stacklst.cpp.obj	556ba2bbd534224f
+3865	4144	7319471246169845	prj.lab/stacklst/libstacklst.a	195063166ff4b88c
+26	8240	7319471287027894	prj.test/CMakeFiles/test_stacklst.dir/test_stacklst.cpp.obj	9abc48c21cb970fe
+8240	9619	7319471300890853	prj.test/bin.dbg/test_stacklst.exe	c64c7cbfaca696e0

@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.20)
 
 project(misis2024s-23-01-kalinkin-d-s)
 
+set(CMAKE_CXX_STANDARD 20)
+
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_property(GLOBAL PROPERTY PREDEFINED_TARGETS_FOLDER "cmake")
 

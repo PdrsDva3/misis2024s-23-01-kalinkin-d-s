@@ -1,4 +1,4 @@
-#include "stacklst.h"
+#include "stacklst.hpp"
 #include <iostream>
 
 bool StackLst::IsEmpty() const noexcept{

@@ -1,4 +1,4 @@
-#include "rational.h"
+#include "rational.hpp"
 
 std::ostream& Rational::writeTo(std::ostream& ostrm) const{
     ostrm << num_ << sep << den_;

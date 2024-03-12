@@ -1,7 +1,7 @@
 #ifndef MISIS2023F_23_01_KALINKIN_D_S_STACKLST_H
 #define MISIS2023F_23_01_KALINKIN_D_S_STACKLST_H
 
-#include <complex/complex.h>
+#include "complex/complex.hpp"
 #include <cstddef>
 #include <iosfwd>
 

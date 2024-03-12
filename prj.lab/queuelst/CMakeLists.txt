@@ -1,4 +1,4 @@
-add_library(queuelst queuelst.cpp queuelst.h)
+add_library(queuelst queuelst.cpp queuelst.hpp)
 target_link_libraries(queuelst complex)
 
 set_property(TARGET queuelst PROPERTY CXX_STANDARD 20)

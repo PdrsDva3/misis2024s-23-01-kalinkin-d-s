@@ -1,4 +1,4 @@
-#include "complex.h"
+#include "complex.hpp"
 #include <iostream>
 
 Complex operator+(const Complex& lhs, const Complex& rhs) {Complex new_obj; new_obj += lhs; new_obj += rhs; return new_obj;}

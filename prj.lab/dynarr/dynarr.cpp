@@ -1,4 +1,4 @@
-#include "dynarr.h"
+#include "dynarr.hpp"
 #include <iosfwd>
 
 
