@@ -1,5 +1,7 @@
-CHECK: 20240316-082011
+CHECK: 20240318-121657
 OK: file codeforces.id is correct
+OK: folder prj.codeforces structure is correct
+ERROR: CMake generator failed
 ERROR: lab complex - test build failed
 ERROR: lab complex_io - test build failed
 ERROR: lab complex_m - test build failed
