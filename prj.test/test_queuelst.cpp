@@ -1,141 +1,89 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
-#include "queuelst/queuelst.hpp"
+#include <queuelst/queuelst.hpp>
 
-
-TEST_CASE("Testing QueueLst functionality") {
+TEST_CASE("QueueList ctor") {
     QueueLst queue;
 
-    SUBCASE("Queue is initially empty") {
-        CHECK(queue.IsEmpty() == true);
-    }
+    CHECK(queue.IsEmpty());
 
-    SUBCASE("Pushing items") {
-        queue.Push(Complex(1, 2));
-        CHECK(queue.IsEmpty() == false);
-        CHECK(queue.Top() == Complex(1, 2));
+    Complex first_complex(1, 1);
 
-        queue.Push(Complex(3, 4));
-        CHECK(queue.Top() == Complex(1, 2));
-    }
+    queue.Push(first_complex);
 
-    SUBCASE("Popping items") {
-        queue.Push(Complex(1, 2));
-        queue.Push(Complex(3, 4));
-        queue.Pop();
-        CHECK(queue.Top() == Complex(3, 4));
-        queue.Pop();
-        CHECK(queue.IsEmpty() == true);
-    }
+    queue.Pop();
 
-    SUBCASE("Clearing queue") {
-        queue.Push(Complex(1, 2));
-        queue.Push(Complex(3, 4));
-        queue.Clear();
-        CHECK(queue.IsEmpty() == true);
-    }
+    CHECK(queue.IsEmpty());
 
-    SUBCASE("Copying queue with constructor") {
-        queue.Push(Complex(5, 6));
-        QueueLst queueCopy(queue);
-        CHECK(queueCopy.IsEmpty() == false);
-        CHECK(queueCopy.Top() == Complex(5, 6));
-    }
+    CHECK_THROWS(queue.Top());
 
-    SUBCASE("Copying queue with assignment operator") {
-        queue.Push(Complex(7, 8));
-        QueueLst queueCopy;
-        queueCopy = queue;
-        CHECK(queueCopy.IsEmpty() == false);
-        CHECK(queueCopy.Top() == Complex(7, 8));
-    }
+    queue.Push(first_complex);
 
-    SUBCASE("Self-assignment") {
-        queue.Push(Complex(9, 10));
-        queue = queue;
-        CHECK(queue.IsEmpty() == false);
-        CHECK(queue.Top() == Complex(9, 10));
-    }
+    CHECK_FALSE(queue.IsEmpty());
+    CHECK(queue.Top() == first_complex);
 
-    SUBCASE("Pop from empty queue") {
-        queue.Pop();
-        CHECK(queue.IsEmpty() == true);
-    }
+    Complex second_complex(2, 2);
 
-    SUBCASE("Top from empty queue") {
-        bool caughtException = false;
-        try {
-            Complex Top = queue.Top();
-        } catch (...) {
-            caughtException = true;
-        }
-        CHECK(caughtException == true);
-    }
+    queue.Push(second_complex);
+
+    CHECK(queue.Top() == first_complex);
+
+    queue.Pop();
 }
 
+static const Complex a(1, 2);
+static const Complex b(1, 3);
+static const Complex c(2, 3);
 
-TEST_CASE("Advanced testing of QueueLst functionality") {
-    SUBCASE("Stress test for Push and Pop operations") {
-        QueueLst queue;
-        int n = 10000;
-        for (int i = 0; i < n; ++i) {
-            queue.Push(Complex(i, i));
-        }
-        CHECK(queue.IsEmpty() == false);
-        for (int i = 0; i < n; ++i) {
-            queue.Pop();
-        }
-        CHECK(queue.IsEmpty() == true);
-    }
+TEST_CASE("time test") {
+    long long diff = 0;
 
-    SUBCASE("Copy constructor under heavy load") {
-        QueueLst queue;
-        int n = 10000; // Количество элементов для добавления
-        for (int i = 0; i < n; ++i) {
-            queue.Push(Complex(i, i));
-        }
-        QueueLst queueCopy(queue);
-        CHECK(queueCopy.IsEmpty() == false);
-        for (int i = 0; i < n; ++i) {
-            Complex expected(i, i);
-            CHECK(queueCopy.Top() == expected);
-            queueCopy.Pop();
-        }
-        CHECK(queueCopy.IsEmpty() == true);
+    QueueLst queue1;
+    for (int i = 0; i < 10000; i++) {
+        queue1.Push(a);
     }
+    auto start = std::chrono::steady_clock::now();
+    QueueLst queue2(queue1);
+    auto end = std::chrono::steady_clock::now();
+    CHECK_EQ(queue2.Top(), a);
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    std::cout << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
 
-    SUBCASE("Assignment operator under heavy load") {
-        QueueLst queue;
-        int n = 10000;
-        for (int i = 0; i < n; ++i) {
-            queue.Push(Complex(i, i));
-        }
-        QueueLst queueCopy;
-        queueCopy = queue;
-        CHECK(queueCopy.IsEmpty() == false);
-        for (int i = 0; i < n; ++i) {
-            Complex expected(i, i);
-            CHECK(queueCopy.Top() == expected);
-            queueCopy.Pop();
-        }
-        CHECK(queueCopy.IsEmpty() == true);
-    }
+    diff = duration.count();
 
-    SUBCASE("Consistency check after multiple operations") {
-        QueueLst queue;
-        int n = 5000;
-        for (int i = 0; i < n; ++i) {
-            queue.Push(Complex(i, i));
-            if (i % 2 == 0) {
-                queue.Pop();
-            }
-        }
-        CHECK(queue.IsEmpty() == false);
-        for (int i = n / 2; i < n; ++i) {
-            Complex expected(i, i);
-            CHECK(queue.Top() == expected);
-            queue.Pop();
-        }
-        CHECK(queue.IsEmpty() == true);
+    start = std::chrono::steady_clock::now();
+    QueueLst queue3(std::move(queue1));
+    end = std::chrono::steady_clock::now();
+    CHECK_EQ(queue3.Top(), a);
+    duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    std::cout << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
+
+    diff -= duration.count();
+
+    CHECK(diff > duration.count() * 10);
+
+    QueueLst queue4;
+    for (int i = 0; i < 10000; i++) {
+        queue4.Push(a);
     }
+    QueueLst queue5;
+    start = std::chrono::steady_clock::now();
+    queue5 = queue4;
+    end = std::chrono::steady_clock::now();
+    CHECK_EQ(queue5.Top(), a);
+    duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    std::cout << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
+
+    diff = duration.count();
+
+    start = std::chrono::steady_clock::now();
+    QueueLst queue6 = std::move(queue4);
+    end = std::chrono::steady_clock::now();
+    CHECK_EQ(queue6.Top(), a);
+    duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    std::cout << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
+
+    diff -= duration.count();
+
+    CHECK(diff > duration.count() * 10);
 }

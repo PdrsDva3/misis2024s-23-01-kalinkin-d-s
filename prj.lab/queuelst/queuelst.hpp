@@ -10,7 +10,7 @@ public:
     QueueLst(const QueueLst& rhs);
     ~QueueLst();
 
-    void Pop();
+    void Pop() noexcept;
     void Push(const Complex& elem);
     bool IsEmpty() const noexcept;
 
@@ -20,10 +20,14 @@ public:
     void Clear();
     QueueLst& operator=(const QueueLst& rhs);
 
+
+    QueueLst(QueueLst&& rhs) noexcept;
+    QueueLst& operator=(QueueLst&& rhs) noexcept;
+
 private:
     struct Node{
-        Complex val;
-        Node* next = nullptr;
+        Complex val_;
+        Node* next_ = nullptr;
     };
     Node* head_ = nullptr;
     Node* tail_ = nullptr;

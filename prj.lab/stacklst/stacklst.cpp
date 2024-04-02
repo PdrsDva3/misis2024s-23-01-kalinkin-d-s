@@ -78,3 +78,17 @@ StackLst& StackLst::operator=(const StackLst& rhs) noexcept {
     }
     return *this;
 }
+
+StackLst::StackLst(StackLst&& rhs) noexcept
+        : head_(rhs.head_)
+{
+    rhs.head_ = nullptr;
+}
+
+StackLst& StackLst::operator=(StackLst &&rhs) noexcept {
+    if (this != &rhs) {
+        std::swap(head_, rhs.head_);
+    }
+
+    return *this;
+}

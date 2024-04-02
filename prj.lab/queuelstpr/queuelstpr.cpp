@@ -1,23 +1,23 @@
 #include "queuelstpr.hpp"
 
 void QueueLstPr::Pop() noexcept {
-    if (head_ != nullptr) {
-        Node *node_ptr = head_;
+    if (!IsEmpty()) {
+        Node* node_ptr = head_;
         head_ = head_->next_;
         delete node_ptr;
     }
 }
 
-float &QueueLstPr::Top() {
+float& QueueLstPr::Top() {
     if (head_ == nullptr)
-        throw std::logic_error("Queue is empty");
+        throw std::out_of_range("Queue is empty");
     else
         return head_->val_;
 }
 
-const float &QueueLstPr::Top() const {
+const float& QueueLstPr::Top() const {
     if (head_ == nullptr)
-        throw std::logic_error("Queue is empty");
+        throw std::out_of_range("Queue is empty");
     else
         return head_->val_;
 }
@@ -42,7 +42,7 @@ QueueLstPr::~QueueLstPr() {
     Clear();
 }
 
-QueueLstPr& QueueLstPr::operator=(QueueLstPr &rhs) {
+QueueLstPr& QueueLstPr::operator=(const QueueLstPr& rhs) {
     if (this != &rhs) {
         Clear();
 
@@ -64,7 +64,7 @@ QueueLstPr& QueueLstPr::operator=(QueueLstPr &rhs) {
     return *this;
 }
 
-QueueLstPr::QueueLstPr(QueueLstPr &rhs) {
+QueueLstPr::QueueLstPr(QueueLstPr& rhs) {
     Node* rhs_ptr = rhs.head_;
     while (rhs_ptr != nullptr) {
         float value = rhs_ptr->val_;
@@ -73,14 +73,45 @@ QueueLstPr::QueueLstPr(QueueLstPr &rhs) {
     }
 }
 
-void QueueLstPr::Push(float& elem) {
-    Node* n_node = new Node;
-    n_node->val_ = elem;
-    if (this->IsEmpty()){
-        head_ = n_node;
-    }else{
-        Node* ptr = head_;
+void QueueLstPr::Push(const float& elem) {
+    Node* node = new Node(elem, nullptr);
+    if(head_ == nullptr){
+        head_ = node;
+        tail_ = node;
+    }else if (elem <= head_->val_){
+            node->next_ = head_;
+            head_ = node;
+    }else if (elem >= tail_->val_){
+        tail_->next_ = node;
+        tail_ = node;
+    }else {
+        Node* temp = head_;
+        while (temp != nullptr) {
+            if (elem <= temp->next_->val_) {
+                Node* next_node = temp->next_;
+                temp->next_ = node;
+                node->next_ = next_node;
+                break;
+            }else{
+                temp = temp->next_;
+            }
+        }
+    }
+}
 
+
+QueueLstPr::QueueLstPr(QueueLstPr&& rhs) noexcept
+        : tail_(rhs.tail_), head_(rhs.head_)
+{
+    rhs.tail_ = nullptr;
+    rhs.head_ = nullptr;
+}
+
+QueueLstPr& QueueLstPr::operator=(QueueLstPr&& rhs) noexcept {
+    if (this != &rhs) {
+        std::swap(tail_, rhs.tail_);
+        std::swap(head_, rhs.head_);
     }
 
+    return *this;
 }

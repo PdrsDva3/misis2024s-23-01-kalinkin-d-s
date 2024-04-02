@@ -9,7 +9,7 @@ public:
     ~QueueLstPr();
     QueueLstPr(QueueLstPr& rhs);
 
-    void Push(float& elem);//! дописать
+    void Push(const float& elem);
     void Pop() noexcept;
 
     float& Top();
@@ -19,7 +19,10 @@ public:
     [[nodiscard]] bool IsEmpty() const noexcept;
 
     void Clear();
-    QueueLstPr& operator=(QueueLstPr& rhs);
+    QueueLstPr& operator=(const QueueLstPr& rhs);
+
+    QueueLstPr& operator=(QueueLstPr&& rhs) noexcept;
+    QueueLstPr(QueueLstPr&& rhs) noexcept;
 
 
 private:
@@ -28,7 +31,7 @@ private:
         Node* next_ = nullptr;
     };
     Node* head_ = nullptr;
-//    Node* tail_ = nullptr;
+    Node* tail_ = nullptr;
 };
 
 

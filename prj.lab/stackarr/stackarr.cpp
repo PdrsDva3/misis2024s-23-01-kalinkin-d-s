@@ -3,7 +3,7 @@
 
 StackArr::StackArr(const StackArr& rhs)
 : top_ind_(rhs.top_ind_), capacity_(rhs.Size()) {
-    data_ = new Complex[rhs.Size()];
+    data_ = new Complex[capacity_];
     for (int i = 0; i < rhs.Size(); i++) {
         data_[i] = rhs.data_[i];
     }

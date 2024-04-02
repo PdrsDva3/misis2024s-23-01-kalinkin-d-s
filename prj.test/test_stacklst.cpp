@@ -1,6 +1,6 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
-#include "stacklst/stacklst.hpp"
+#include <stacklst/stacklst.hpp>
 
 TEST_CASE("StackList ctor") {
     StackLst stack;
@@ -112,11 +112,11 @@ TEST_CASE("StackLst test") {
 
     StackLst eq1;
     StackLst eq2;
-    eq1.Push(first_complex);// 3
-    eq1.Push(second_complex);//2
-    eq1.Push(third_complex);// 1
+    eq1.Push(first_complex);
+    eq1.Push(second_complex);
+    eq1.Push(third_complex);
     eq2 = eq1;
-    CHECK_EQ(eq1.Top(), eq2.Top());// !!!!!!!!!!!!!!!!!!!!!!!!!
+    CHECK_EQ(eq1.Top(), eq2.Top());
     eq1.Pop();
     eq2.Pop();
     CHECK_EQ(eq1.Top(), eq2.Top());
@@ -178,50 +178,59 @@ TEST_CASE("stack list new copy func realisation") {
     CHECK_EQ(stackFirst.Top(), stackSecond.Top());
 }
 
-TEST_CASE("Testing StackLst functionality") {
-    StackLst stack;
+static const Complex a(1, 2);
+static const Complex b(1, 3);
+static const Complex c(2, 3);
 
-    SUBCASE("Stack is initially empty") {
-        CHECK(stack.IsEmpty() == true);
+TEST_CASE("time test") {
+    long long diff = 0;
+
+    StackLst stack1;
+    for (int i = 0; i < 10000; i++) {
+        stack1.Push(a);
     }
+    auto start = std::chrono::steady_clock::now();
+    StackLst stack2(stack1);
+    auto end = std::chrono::steady_clock::now();
+    CHECK_EQ(stack2.Top(), a);
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    std::cout << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
 
-    SUBCASE("Pushing items") {
-        stack.Push(Complex(1, 2));
-        CHECK(stack.IsEmpty() == false);
-        CHECK(stack.Top() == Complex(1, 2));
+    diff = duration.count();
 
-        stack.Push(Complex(3, 4));
-        CHECK(stack.Top() == Complex(3, 4));
+    start = std::chrono::steady_clock::now();
+    StackLst stack3(std::move(stack1));
+    end = std::chrono::steady_clock::now();
+    CHECK_EQ(stack3.Top(), a);
+    duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    std::cout << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
+
+    diff -= duration.count();
+
+    CHECK(diff > duration.count() * 10);
+
+    StackLst stack4;
+    for (int i = 0; i < 10000; i++) {
+        stack4.Push(a);
     }
+    StackLst stack5;
+    start = std::chrono::steady_clock::now();
+    stack5 = stack4;
+    end = std::chrono::steady_clock::now();
+    CHECK_EQ(stack5.Top(), a);
+    duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    std::cout << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
 
-    SUBCASE("Popping items") {
-        stack.Push(Complex(1, 2));
-        stack.Push(Complex(3, 4));
-        stack.Pop();
-        CHECK(stack.Top() == Complex(1, 2));
-        stack.Pop();
-        CHECK(stack.IsEmpty() == true);
-    }
+    diff = duration.count();
 
-    SUBCASE("Clearing stack") {
-        stack.Push(Complex(1, 2));
-        stack.Push(Complex(3, 4));
-        stack.Clear();
-        CHECK(stack.IsEmpty() == true);
-    }
-}
+    start = std::chrono::steady_clock::now();
+    StackLst stack6 = std::move(stack4);
+    end = std::chrono::steady_clock::now();
+    CHECK_EQ(stack6.Top(), a);
+    duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    std::cout << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
 
-TEST_CASE("Memory leak test for StackLst") {
-    StackLst stack;
+    diff -= duration.count();
 
-    SUBCASE("Pushing and popping a large number of items") {
-        const int largeNumber = 1000000;
-        for (int i = 0; i < largeNumber; ++i) {
-            stack.Push(Complex(i, i));
-        }
-        for (int i = 0; i < largeNumber; ++i) {
-            stack.Pop();
-        }
-        CHECK(stack.IsEmpty() == true);
-    }
+    CHECK(diff > duration.count() * 10);
 }

@@ -11,3 +11,5 @@ add_subdirectory(stacklst)
 add_subdirectory(queuelst)
 
 add_subdirectory(queuelstpr)
+
+add_subdirectory(bitset)

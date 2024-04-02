@@ -9,17 +9,20 @@
 class StackLst{
 public:
     StackLst() = default;
-    StackLst(const StackLst& rhs);
-    ~StackLst();
+    StackLst(const StackLst& rhs);//!
+    ~StackLst();//!
 
-    void Pop();
-    void Push(const Complex& elem);
-    [[nodiscard]] bool IsEmpty() const noexcept;
-    Complex& Top();
-    [[nodiscard]] const Complex& Top() const;
+    void Pop();//2
+    void Push(const Complex& elem);//2
+    [[nodiscard]] bool IsEmpty() const noexcept;//2
+    Complex& Top();//2
+    [[nodiscard]] const Complex& Top() const;//2
 
-    void Clear();
-    StackLst& operator=(const StackLst& rhs) noexcept;
+    void Clear();//2
+    StackLst& operator=(const StackLst& rhs) noexcept;//!
+
+    StackLst& operator=(StackLst&& rhs) noexcept;//!
+    StackLst(StackLst&& rhs) noexcept;//!
 
 private:
     struct Node{
