@@ -1,6 +1,20 @@
 #include "queuearr.hpp"
 
-bool QueueArr::isfull() {
+void QueueArr::recapacity(int n_capacity){
+    Complex* n_data = new Complex[n_capacity];
+    int temp = 0;
+    while (head_ != tail_){
+        ++head_;
+        ++temp;
+        n_data[temp] = data_[head_ % capacity_];
+    }
+    head_ = 0;
+    tail_ = size_ - 1;
+    delete data_;
+    data_ = n_data;
+}
+
+bool QueueArr::isfull() noexcept{
     if ((head_ == tail_-1) || (head_ == 0 && tail_ == size_-1))
         return true;
     return false;
@@ -37,5 +51,42 @@ void QueueArr::Clear() noexcept {
         }
         head_ = -1;
         tail_ = -1;
+        size_ = 0;
     }
 }
+
+QueueArr::QueueArr(const QueueArr& rhs)
+    : capacity_(rhs.capacity_), size_(rhs.size_), head_(rhs.head_), tail_(rhs.tail_)
+{
+    data_ = new Complex[capacity_];
+    for (int i = 0; i < size_; i++) {
+        data_[i] = rhs.data_[i];
+    }
+}
+
+void QueueArr::Pop() noexcept {
+    if (!IsEmpty()){
+        if (head_ == tail_){
+            head_ = -1;
+            tail_ = -1;
+        }else{
+            head_++;
+            if (head_ + 1 > capacity_)
+                head_ = 0;
+        }
+        size_ --;
+    }
+}
+
+void QueueArr::Push(const Complex& rhs){
+    if (isfull())
+        recapacity(capacity_ * 2);
+    else if (){
+        //дописать
+    }else{
+        tail_++;
+        data_[tail_] = rhs;
+    }
+}
+
+

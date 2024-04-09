@@ -37,18 +37,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="Add QueueLstPr library">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/prj.lab/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/prj.lab/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/stackarr/stackarr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/stackarr/stackarr.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.test/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.lab/bitset/bitset.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/bitset/bitset.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.lab/queuearr/queuearr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/queuearr/queuearr.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.lab/queuearr/queuearr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/queuearr/queuearr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.test/test_queuearr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.test/test_queuearr.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,11 +123,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Doctest.All in test_queuelstpr.cpp">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in test_queuelst.cpp" type="CMakeDoctestTestRunConfigurationType" factoryName="doctest Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="test_queuelst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="test_queuelst" TEST_PATTERN="[#*test_queuelst.cpp]" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -257,7 +246,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="C/C++ File.1926a.cpp" />
+      <item itemvalue="Doctest.All in test_queuelst.cpp" />
+      <item itemvalue="Doctest.All in test_queuelstpr.cpp" />
+      <item itemvalue="Doctest.All in test_stacklst" />
+      <item itemvalue="Doctest.All in test_stacklst.cpp" />
+      <item itemvalue="Doctest.Testing QueueLst functionality" />
+      <item itemvalue="Doctest.test_complex" />
+      <item itemvalue="Doctest.test_queuelst" />
+      <item itemvalue="Doctest.test_queuelstpr" />
+      <item itemvalue="Doctest.test_rational" />
+      <item itemvalue="Doctest.test_stackarr" />
+      <item itemvalue="Doctest.test_stacklst" />
       <item itemvalue="CMake Application.bitset" />
       <item itemvalue="CMake Application.complex" />
       <item itemvalue="CMake Application.dynarr" />
@@ -268,17 +267,7 @@
       <item itemvalue="CMake Application.stackarr" />
       <item itemvalue="CMake Application.stacklst" />
       <item itemvalue="CMake Application.test_queuearr" />
-      <item itemvalue="Doctest.All in test_stacklst" />
-      <item itemvalue="Doctest.test_complex" />
-      <item itemvalue="Doctest.test_queuelst" />
-      <item itemvalue="Doctest.test_queuelstpr" />
-      <item itemvalue="Doctest.test_rational" />
-      <item itemvalue="Doctest.test_stackarr" />
-      <item itemvalue="Doctest.test_stacklst" />
-      <item itemvalue="Doctest.All in test_queuelstpr.cpp" />
-      <item itemvalue="Doctest.All in test_stacklst.cpp" />
-      <item itemvalue="Doctest.All in test_queuelst.cpp" />
-      <item itemvalue="Doctest.Testing QueueLst functionality" />
+      <item itemvalue="C/C++ File.1926a.cpp" />
     </list>
     <recent_temporary>
       <list>
@@ -329,7 +318,10 @@
       <workItem from="1711825760733" duration="6654000" />
       <workItem from="1711834121583" duration="554000" />
       <workItem from="1712004904433" duration="5911000" />
-      <workItem from="1712045408134" duration="3621000" />
+      <workItem from="1712045408134" duration="3919000" />
+      <workItem from="1712051651638" duration="1131000" />
+      <workItem from="1712224124785" duration="4648000" />
+      <workItem from="1712657107359" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="Update: CMakeLists.txt">
       <option name="closed" value="true" />

@@ -28,6 +28,10 @@ public:
 
 
 private:
+    class BitAccess{
+
+    };
+
     std::int32_t size_ = 0;
     std::vector<std::uint32_t>* data = nullptr;
 };

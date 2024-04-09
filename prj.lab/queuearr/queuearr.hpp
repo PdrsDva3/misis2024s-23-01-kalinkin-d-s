@@ -7,16 +7,16 @@
 class QueueArr {
 public:
     QueueArr() = default;//! done
-    ~QueueArr() {delete[] data_;}
+    ~QueueArr() {delete[] data_;}//! done
 
-    QueueArr(QueueArr&& rhs) noexcept;
-    QueueArr(const QueueArr& rhs);
+    QueueArr(const QueueArr& rhs);//! done только при инициализации
+    QueueArr(QueueArr&& rhs) noexcept;// только при инициализации
 
-    QueueArr& operator=(QueueArr&& rhs) noexcept;
     QueueArr& operator=(const QueueArr& rhs) noexcept;
+    QueueArr& operator=(QueueArr&& rhs) noexcept;
 
     void Push(const Complex& rhs);
-    void Pop() noexcept;
+    void Pop() noexcept;//! done
 
     Complex& Top();//! done
     const Complex& Top() const;//! done
@@ -26,13 +26,14 @@ public:
     bool IsEmpty() const noexcept;//! done
 
 private:
-    bool isfull();
+    void recapacity(int n_capacity);
+    bool isfull() noexcept;
 
     int head_ = -1;
     int tail_ = -1;
 
     int size_ = 0;
-    std::ptrdiff_t capacity_ = 0;
+    int capacity_ = 0;
 
     Complex* data_ = nullptr;
 };
