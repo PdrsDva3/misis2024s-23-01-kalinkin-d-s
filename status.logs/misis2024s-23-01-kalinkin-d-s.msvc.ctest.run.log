@@ -92,14 +92,14 @@ Release/D:/projects/misis2023f-23-check/misis2024s-23-01-kalinkin-d-s/bin.check/
       Start 18: doctest_stackarr_m
       Start 19: doctest_stacklst
       Start 20: doctest_stacklst_m
- 9/20 Test  #4: doctest_complex_io ...............   Passed    0.04 sec
+ 9/20 Test  #4: doctest_complex_io ...............   Passed    0.03 sec
 10/20 Test  #5: doctest_complex_m ................   Passed    0.03 sec
 11/20 Test  #7: doctest_rational_io ..............   Passed    0.03 sec
 12/20 Test  #8: doctest_rational_m ...............***Failed    0.03 sec
 13/20 Test #13: doctest_queuelst .................   Passed    0.02 sec
 14/20 Test #15: doctest_queuelstpr ...............   Passed    0.02 sec
-15/20 Test #14: doctest_queuelst_m ...............   Passed    0.02 sec
-16/20 Test #16: doctest_queuelstpr_m .............   Passed    0.02 sec
+15/20 Test #16: doctest_queuelstpr_m .............   Passed    0.01 sec
+16/20 Test #14: doctest_queuelst_m ...............   Passed    0.02 sec
 17/20 Test #17: doctest_stackarr .................***Failed    0.01 sec
 18/20 Test #18: doctest_stackarr_m ...............***Failed    0.01 sec
 19/20 Test #19: doctest_stacklst .................***Failed    0.01 sec
