@@ -92,22 +92,22 @@ Release/D:/.dima/misis2023f-23-check/misis2024s-23-01-kalinkin-d-s/bin.check/doc
       Start 18: doctest_stackarr_m
       Start 19: doctest_stacklst
       Start 20: doctest_stacklst_m
- 9/20 Test  #4: doctest_complex_io ...............   Passed    0.19 sec
-10/20 Test  #5: doctest_complex_m ................   Passed    0.17 sec
-11/20 Test  #7: doctest_rational_io ..............   Passed    0.16 sec
-12/20 Test  #8: doctest_rational_m ...............***Failed    0.14 sec
-13/20 Test #13: doctest_queuelst .................   Passed    0.12 sec
-14/20 Test #14: doctest_queuelst_m ...............   Passed    0.11 sec
-15/20 Test #15: doctest_queuelstpr ...............   Passed    0.10 sec
-16/20 Test #16: doctest_queuelstpr_m .............   Passed    0.08 sec
-17/20 Test #17: doctest_stackarr .................***Failed    0.07 sec
-18/20 Test #18: doctest_stackarr_m ...............***Failed    0.06 sec
-19/20 Test #19: doctest_stacklst .................***Failed    0.05 sec
-20/20 Test #20: doctest_stacklst_m ...............   Passed    0.04 sec
+ 9/20 Test  #4: doctest_complex_io ...............   Passed    0.14 sec
+10/20 Test  #5: doctest_complex_m ................   Passed    0.13 sec
+11/20 Test  #7: doctest_rational_io ..............   Passed    0.12 sec
+12/20 Test  #8: doctest_rational_m ...............***Failed    0.11 sec
+13/20 Test #13: doctest_queuelst .................   Passed    0.09 sec
+14/20 Test #14: doctest_queuelst_m ...............   Passed    0.08 sec
+15/20 Test #15: doctest_queuelstpr ...............   Passed    0.07 sec
+16/20 Test #16: doctest_queuelstpr_m .............   Passed    0.06 sec
+17/20 Test #17: doctest_stackarr .................***Failed    0.05 sec
+18/20 Test #18: doctest_stackarr_m ...............***Failed    0.04 sec
+19/20 Test #19: doctest_stacklst .................***Failed    0.03 sec
+20/20 Test #20: doctest_stacklst_m ...............   Passed    0.02 sec
 
 40% tests passed, 12 tests failed out of 20
 
-Total Test time (real) =   0.23 sec
+Total Test time (real) =   0.17 sec
 
 The following tests FAILED:
 	  1 - doctest_bitset (Not Run)
