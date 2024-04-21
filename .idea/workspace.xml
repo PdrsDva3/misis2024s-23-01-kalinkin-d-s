@@ -27,6 +27,7 @@
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_queuearr" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_stacklst" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="complex" />
+      <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="stacklstt" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -37,12 +38,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="Add QueueLstPr library">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/bitset/bitset.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/bitset/bitset.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/queuearr/queuearr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/queuearr/queuearr.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/queuearr/queuearr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/queuearr/queuearr.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.test/test_queuearr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.test/test_queuearr.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/prj.lab/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/prj.lab/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.lab/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.test/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,6 +237,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="stacklstt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="stacklstt" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test_queuearr" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="test_queuearr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="test_queuearr">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -266,6 +274,7 @@
       <item itemvalue="CMake Application.rational" />
       <item itemvalue="CMake Application.stackarr" />
       <item itemvalue="CMake Application.stacklst" />
+      <item itemvalue="CMake Application.stacklstt" />
       <item itemvalue="CMake Application.test_queuearr" />
       <item itemvalue="C/C++ File.1926a.cpp" />
     </list>
@@ -321,7 +330,10 @@
       <workItem from="1712045408134" duration="3919000" />
       <workItem from="1712051651638" duration="1131000" />
       <workItem from="1712224124785" duration="4648000" />
-      <workItem from="1712657107359" duration="5000" />
+      <workItem from="1712657107359" duration="2584000" />
+      <workItem from="1712973520120" duration="6000" />
+      <workItem from="1713261175552" duration="3991000" />
+      <workItem from="1713708398496" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="Update: CMakeLists.txt">
       <option name="closed" value="true" />
