@@ -81,12 +81,43 @@ void QueueArr::Pop() noexcept {
 void QueueArr::Push(const Complex& rhs){
     if (isfull())
         recapacity(capacity_ * 2);
-    else if (){
-        //дописать
-    }else{
-        tail_++;
-        data_[tail_] = rhs;
-    }
+    tail_ = (tail_ + 1) % capacity_;
+    data_[tail_] = rhs;
+
+    size_ += 1;
+}
+
+QueueArr::QueueArr(QueueArr&& rhs) noexcept
+        : data_(rhs.data_), capacity_(rhs.capacity_), head_(rhs.head_), tail_(rhs.tail_), size_(rhs.size_) {
+    rhs.data_ = nullptr;
+    rhs.capacity_ = 0;
+    rhs.head_ = 0;
+    rhs.tail_ = 0;
+    rhs.size_ = 0;
 }
 
 
+QueueArr &QueueArr::operator=(QueueArr&& rhs) noexcept {
+    std::swap(data_, rhs.data_);
+    std::swap(capacity_, rhs.capacity_);
+    std::swap(head_, rhs.head_);
+    std::swap(tail_, rhs.tail_);
+    std::swap(size_, rhs.size_);
+    return *this;
+}
+
+QueueArr& QueueArr::operator=(const QueueArr& rhs) noexcept{
+    if (rhs.Size() > capacity_) {
+        delete[] data_;
+        data_ = new Complex[rhs.Size()];
+
+    }
+    for (std::ptrdiff_t i = 0; i < rhs.Size(); i++){
+        data_[i] = rhs.data_[(i + rhs.head_) % rhs.Size()];
+    }
+    capacity_ = rhs.Size();
+    tail_ = size_ - 1;
+    head_ = 0;
+    size_ = rhs.Size();
+    return *this;
+}

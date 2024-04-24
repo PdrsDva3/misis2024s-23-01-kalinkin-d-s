@@ -124,4 +124,7 @@ void StackLstT<T>::Clear() noexcept {
         Pop();
     }
 }
+
+template<class T>
+StackLstT<T>::~StackLstT(){;}
 #endif //MISIS2023F_23_01_KALINKIN_D_S_STACKLST_H

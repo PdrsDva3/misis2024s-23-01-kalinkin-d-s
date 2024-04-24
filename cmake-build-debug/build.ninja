@@ -1512,6 +1512,110 @@ build prj.test/CMakeFiles/install/strip.util: CUSTOM_COMMAND prj.test/all
 build prj.test/install/strip: phony prj.test/CMakeFiles/install/strip.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target timing_q
+
+
+#############################################
+# Order-only phony target for timing_q
+
+build cmake_object_order_depends_target_timing_q: phony || cmake_object_order_depends_target_complex cmake_object_order_depends_target_queuearr cmake_object_order_depends_target_queuelst
+
+build prj.app/timing_q/CMakeFiles/timing_q.dir/timing_q.cpp.obj: CXX_COMPILER__timing_q_unscanned_Debug C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.app/timing_q/timing_q.cpp || cmake_object_order_depends_target_timing_q
+  DEP_FILE = prj.app\timing_q\CMakeFiles\timing_q.dir\timing_q.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuearr/.. -IC:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/complex/.. -IC:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuelst/..
+  OBJECT_DIR = prj.app\timing_q\CMakeFiles\timing_q.dir
+  OBJECT_FILE_DIR = prj.app\timing_q\CMakeFiles\timing_q.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target timing_q
+
+
+#############################################
+# Link the executable prj.app\timing_q\bin.dbg\timing_q.exe
+
+build prj.app/timing_q/bin.dbg/timing_q.exe: CXX_EXECUTABLE_LINKER__timing_q_Debug prj.app/timing_q/CMakeFiles/timing_q.dir/timing_q.cpp.obj | prj.lab/queuearr/libqueuearr.a prj.lab/queuelst/libqueuelst.a prj.lab/complex/libcomplex.a || prj.lab/complex/libcomplex.a prj.lab/queuearr/libqueuearr.a prj.lab/queuelst/libqueuelst.a
+  FLAGS = -g
+  LINK_LIBRARIES = prj.lab/queuearr/libqueuearr.a  prj.lab/queuelst/libqueuelst.a  prj.lab/complex/libcomplex.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = prj.app\timing_q\CMakeFiles\timing_q.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = prj.app\timing_q\bin.dbg\timing_q.exe
+  TARGET_IMPLIB = prj.app\timing_q\libtiming_q.dll.a
+  TARGET_PDB = timing_q.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build prj.app/timing_q/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Lol\CLionProjects\misis2024s-23-01-kalinkin-d-s\cmake-build-debug\prj.app\timing_q && "C:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build prj.app/timing_q/edit_cache: phony prj.app/timing_q/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build prj.app/timing_q/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Lol\CLionProjects\misis2024s-23-01-kalinkin-d-s\cmake-build-debug\prj.app\timing_q && "C:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Lol\CLionProjects\misis2024s-23-01-kalinkin-d-s -BC:\Users\Lol\CLionProjects\misis2024s-23-01-kalinkin-d-s\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build prj.app/timing_q/rebuild_cache: phony prj.app/timing_q/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build prj.app/timing_q/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build prj.app/timing_q/CMakeFiles/install.util: CUSTOM_COMMAND prj.app/timing_q/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Lol\CLionProjects\misis2024s-23-01-kalinkin-d-s\cmake-build-debug\prj.app\timing_q && "C:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build prj.app/timing_q/install: phony prj.app/timing_q/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build prj.app/timing_q/CMakeFiles/install/local.util: CUSTOM_COMMAND prj.app/timing_q/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Lol\CLionProjects\misis2024s-23-01-kalinkin-d-s\cmake-build-debug\prj.app\timing_q && "C:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build prj.app/timing_q/install/local: phony prj.app/timing_q/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build prj.app/timing_q/CMakeFiles/install/strip.util: CUSTOM_COMMAND prj.app/timing_q/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Lol\CLionProjects\misis2024s-23-01-kalinkin-d-s\cmake-build-debug\prj.app\timing_q && "C:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build prj.app/timing_q/install/strip: phony prj.app/timing_q/CMakeFiles/install/strip.util
+
+# =============================================================================
 # Target aliases.
 
 build bitset: phony prj.lab/bitset/libbitset.a
@@ -1584,6 +1688,10 @@ build test_stacklstt: phony prj.test/bin.dbg/test_stacklstt.exe
 
 build test_stacklstt.exe: phony prj.test/bin.dbg/test_stacklstt.exe
 
+build timing_q: phony prj.app/timing_q/bin.dbg/timing_q.exe
+
+build timing_q.exe: phony prj.app/timing_q/bin.dbg/timing_q.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -1592,7 +1700,14 @@ build test_stacklstt.exe: phony prj.test/bin.dbg/test_stacklstt.exe
 #############################################
 # Folder: C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug
 
-build all: phony prj.lab/all prj.test/all
+build all: phony prj.lab/all prj.test/all prj.app/timing_q/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.app/timing_q
+
+build prj.app/timing_q/all: phony prj.app/timing_q/bin.dbg/timing_q.exe
 
 # =============================================================================
 
@@ -1685,14 +1800,14 @@ build prj.test/all: phony prj.test/bin.dbg/test_complex.exe prj.test/bin.dbg/tes
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/bitset/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/complex/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/dynarr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuearr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuelst/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuelstpr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/rational/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/stackarr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/stacklst/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/stacklstt/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.test/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.app/timing_q/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/bitset/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/complex/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/dynarr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuearr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuelst/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuelstpr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/rational/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/stackarr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/stacklst/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/stacklstt/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.test/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/bitset/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/complex/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/dynarr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuearr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuelst/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuelstpr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/rational/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/stackarr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/stacklst/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/stacklstt/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.test/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.app/timing_q/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/bitset/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/complex/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/dynarr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuearr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuelst/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/queuelstpr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/rational/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/stackarr/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/stacklst/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.lab/stacklstt/CMakeLists.txt C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.test/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
 
 
 #############################################

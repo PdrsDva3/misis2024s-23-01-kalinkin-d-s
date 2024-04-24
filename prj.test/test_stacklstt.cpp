@@ -2,12 +2,17 @@
 #include "doctest.h"
 #include <stacklstt/stacklstt.hpp>
 
-TEST_CASE("Pusing int"){
-    StackLstT<int> a;
-    a.Push(3);
-    a.Push(2);
-    a.Push(1);
-    CHECK(a.Pop() == 3);
+TEST_CASE("Type integer"){
+    StackLstT<int> stack;
+    for (int i = 1; i <= 100; i++){
+        stack.Push(i);
+    }
+    CHECK_EQ(stack.Top(), 100);
+    for (int i = 1; i <= 100; i++){
+        stack.Pop();
+    }
+    CHECK(stack.IsEmpty());
+    CHECK_NOTHROW(stack.Pop());
 
 }
 

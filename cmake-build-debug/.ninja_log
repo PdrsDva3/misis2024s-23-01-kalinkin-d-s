@@ -25,3 +25,5 @@
 4	6479	7337096578916730	prj.test/CMakeFiles/test_queuelst.dir/test_queuelst.cpp.obj	77067a37fbe19b0a
 6480	7479	7337096588929862	prj.test/bin.dbg/test_queuelst.exe	2bc9f5b1e2534d96
 808	1720	7337484798824365	prj.test/bin.dbg/test_queuelstpr.exe	6fad11ce4344c296
+3	4106	7355694898461690	prj.test/CMakeFiles/test_stacklstt.dir/test_stacklstt.cpp.obj	a5500c84f4df9f7f
+4107	4863	7355694906068390	prj.test/bin.dbg/test_stacklstt.exe	39ebd43156a86cd0

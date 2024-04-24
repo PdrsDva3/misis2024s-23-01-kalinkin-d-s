@@ -9,13 +9,13 @@ public:
     QueueArr() = default;//! done
     ~QueueArr() {delete[] data_;}//! done
 
-    QueueArr(const QueueArr& rhs);//! done только при инициализации
-    QueueArr(QueueArr&& rhs) noexcept;// только при инициализации
+    QueueArr(const QueueArr& rhs);//! done        только при инициализации
+    QueueArr(QueueArr&& rhs) noexcept;//!  done   только при инициализации
 
-    QueueArr& operator=(const QueueArr& rhs) noexcept;
-    QueueArr& operator=(QueueArr&& rhs) noexcept;
+    QueueArr& operator=(const QueueArr& rhs) noexcept;//!  done
+    QueueArr& operator=(QueueArr&& rhs) noexcept;//!  done
 
-    void Push(const Complex& rhs);
+    void Push(const Complex& rhs);//!  done
     void Pop() noexcept;//! done
 
     Complex& Top();//! done
