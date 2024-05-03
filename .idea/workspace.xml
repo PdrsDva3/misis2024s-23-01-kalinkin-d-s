@@ -40,19 +40,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="Add QueueLstPr library">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/queuearr/queuearr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/queuearr/queuearr.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/stacklstt/stacklstt.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/stacklstt/stacklstt.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.test/test_stacklstt.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.test/test_stacklstt.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj.codeforces/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,50 +80,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;C/C++ File.1926a.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.test_stacklst.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;CMake Application.1931a.executor&quot;: &quot;Run&quot;,
-    &quot;CMake Application.1931b.executor&quot;: &quot;Run&quot;,
-    &quot;CMake Application.1931c.executor&quot;: &quot;Run&quot;,
-    &quot;CMake Application.test_complex.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.Advanced testing of QueueLst functionality.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.All in test_queuelst.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.All in test_queuelstpr.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.All in test_rational.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.All in test_stacklst.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.All in test_stacklst.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.StackArr test.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.StackList ctor.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.StackLst test.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.Testing QueueLst functionality.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.Type integer.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.stack list new copy func realisation.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.stackarr ctor.executor&quot;: &quot;Run&quot;,
-    &quot;Doctest.stackarr pop exception.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C/C++ File.1926a.cpp.executor": "Run",
+    "C/C++ File.1972b.cpp.executor": "Run",
+    "C/C++ File.test_stacklst.cpp.executor": "Run",
+    "CMake Application.1931a.executor": "Run",
+    "CMake Application.1931b.executor": "Run",
+    "CMake Application.1931c.executor": "Run",
+    "CMake Application.test_complex.executor": "Run",
+    "Doctest.Advanced testing of QueueLst functionality.executor": "Run",
+    "Doctest.All in test_queuelst.cpp.executor": "Run",
+    "Doctest.All in test_queuelstpr.cpp.executor": "Run",
+    "Doctest.All in test_rational.cpp.executor": "Run",
+    "Doctest.All in test_stacklst.cpp.executor": "Run",
+    "Doctest.All in test_stacklst.executor": "Run",
+    "Doctest.StackArr test.executor": "Run",
+    "Doctest.StackList ctor.executor": "Run",
+    "Doctest.StackLst test.executor": "Run",
+    "Doctest.Testing QueueLst functionality.executor": "Run",
+    "Doctest.Type integer.executor": "Run",
+    "Doctest.stack list new copy func realisation.executor": "Run",
+    "Doctest.stackarr ctor.executor": "Run",
+    "Doctest.stackarr pop exception.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lol\CLionProjects\misis2024s-23-01-kalinkin-d-s\prj.codeforces" />
     </key>
   </component>
-  <component name="RunManager" selected="Doctest.Type integer">
+  <component name="RunManager" selected="C/C++ File.1972b.cpp">
     <configuration name="All in test_queuelst.cpp" type="CMakeDoctestTestRunConfigurationType" factoryName="doctest Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="test_queuelst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="test_queuelst" TEST_PATTERN="[#*test_queuelst.cpp]" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -153,12 +144,6 @@
       </method>
     </configuration>
     <configuration name="All in test_stacklst.cpp" type="CMakeDoctestTestRunConfigurationType" factoryName="doctest Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="test_stacklst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="test_stacklst" TEST_PATTERN="[#*test_stacklst.cpp]" TEST_MODE="PATTERN">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Testing QueueLst functionality" type="CMakeDoctestTestRunConfigurationType" factoryName="doctest Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="test_queuelst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="test_queuelst" TEST_METHOD="Testing QueueLst functionality" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -210,6 +195,11 @@
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="bitset" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="bitset" CONFIG_NAME="Debug">
@@ -272,7 +262,14 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="1972b.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="1972b.cpp" CONFIG_NAME="1972b.cpp">
+      <option name="sourceFile" value="prj.codeforces\1972b.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="C/C++ File.1972b.cpp" />
       <item itemvalue="CMake Application.timing_q" />
       <item itemvalue="CMake Application.bitset" />
       <item itemvalue="CMake Application.complex" />
@@ -297,15 +294,14 @@
       <item itemvalue="Doctest.All in test_queuelst.cpp" />
       <item itemvalue="Doctest.All in test_queuelstpr.cpp" />
       <item itemvalue="Doctest.All in test_stacklst.cpp" />
-      <item itemvalue="Doctest.Testing QueueLst functionality" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.1972b.cpp" />
         <item itemvalue="Doctest.Type integer" />
         <item itemvalue="Doctest.All in test_queuelstpr.cpp" />
         <item itemvalue="Doctest.All in test_queuelst.cpp" />
         <item itemvalue="Doctest.All in test_stacklst.cpp" />
-        <item itemvalue="Doctest.Testing QueueLst functionality" />
       </list>
     </recent_temporary>
   </component>
@@ -356,7 +352,9 @@
       <workItem from="1713261175552" duration="3991000" />
       <workItem from="1713708398496" duration="146000" />
       <workItem from="1713865685218" duration="3401000" />
-      <workItem from="1713958852177" duration="1031000" />
+      <workItem from="1713958852177" duration="3378000" />
+      <workItem from="1714649923706" duration="2068000" />
+      <workItem from="1714737744008" duration="3497000" />
     </task>
     <task id="LOCAL-00001" summary="Update: CMakeLists.txt">
       <option name="closed" value="true" />
