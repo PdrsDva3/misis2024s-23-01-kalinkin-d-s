@@ -18,14 +18,16 @@
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="rational" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="bitset" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="queuelstpr" />
-      <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="timing_q" />
+      <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_queuearrt" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_stacklstt" />
+      <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_queuelstt" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_rational" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="dynarr" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="queuearr" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_complex" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="stackarr" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_queuelst" />
+      <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_stackarrt" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_queuearr" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="test_stacklst" />
       <config projectName="misis2024s-23-01-kalinkin-d-s" targetName="complex" />
@@ -40,13 +42,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="Add QueueLstPr library">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/1931с.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/1931с.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/1941c.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/1941c.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/stackarr/stackarr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/stackarr/stackarr.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/stackarr/stackarr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/stackarr/stackarr.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.lab/stacklstt/stacklstt.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/prj.lab/stacklstt/stacklstt.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.test/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +254,17 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="timing_q" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="timing_q" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="timing_q">
+    <configuration name="test_queuearrt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="test_queuearrt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="test_queuearrt">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_queuelstt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="test_queuelstt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="test_queuelstt">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_stackarrt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="test_stackarrt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="test_stackarrt">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -292,7 +302,9 @@
       <item itemvalue="CMake Application.stacklst" />
       <item itemvalue="CMake Application.stacklstt" />
       <item itemvalue="CMake Application.test_queuearr" />
-      <item itemvalue="CMake Application.timing_q" />
+      <item itemvalue="CMake Application.test_queuearrt" />
+      <item itemvalue="CMake Application.test_queuelstt" />
+      <item itemvalue="CMake Application.test_stackarrt" />
       <item itemvalue="Doctest.All in test_stacklst" />
       <item itemvalue="Doctest.test_complex" />
       <item itemvalue="Doctest.test_queuelst" />
