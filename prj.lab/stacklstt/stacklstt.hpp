@@ -33,7 +33,7 @@ private:
     Node* head_ = nullptr;
 };
 
-//----- реализация шаблонных йункций производится в хедере -----
+//----- реализация шаблонных методов производится в хедере -----
 
 template<class T>
 StackLstT<T>::StackLstT(const StackLstT<T>& stck) {

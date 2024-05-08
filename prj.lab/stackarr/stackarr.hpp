@@ -25,6 +25,9 @@ public:
     [[nodiscard]] const Complex& Top() const;
     void Clear() noexcept;
 
+    StackArr(StackArr&& rhs) noexcept;
+    StackArr& operator=(StackArr&& rhs) noexcept;
+
 
 
 private:

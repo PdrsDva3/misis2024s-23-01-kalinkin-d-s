@@ -21,3 +21,12 @@ target_link_libraries(test_queuearr queuearr)
 
 add_executable(test_stacklstt test_stacklstt.cpp)
 target_link_libraries(test_stacklstt stacklstt)
+
+add_executable(test_queuearrt test_queuearrt.cpp)
+target_link_libraries(test_queuearrt queuearrt)
+
+add_executable(test_queuelstt test_queuelstt.cpp)
+target_link_libraries(test_queuelstt queuelstt)
+
+add_executable(test_stackarrt test_stackarrt.cpp)
+target_link_libraries(test_stackarrt stackarrt)

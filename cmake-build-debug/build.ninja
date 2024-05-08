@@ -1446,6 +1446,105 @@ build prj.test/bin.dbg/test_stacklstt.exe: CXX_EXECUTABLE_LINKER__test_stacklstt
   TARGET_IMPLIB = prj.test\libtest_stacklstt.dll.a
   TARGET_PDB = test_stacklstt.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target test_queuearrt
+
+
+#############################################
+# Order-only phony target for test_queuearrt
+
+build cmake_object_order_depends_target_test_queuearrt: phony || prj.test/CMakeFiles/test_queuearrt.dir
+
+build prj.test/CMakeFiles/test_queuearrt.dir/test_queuearrt.cpp.obj: CXX_COMPILER__test_queuearrt_unscanned_Debug C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.test/test_queuearrt.cpp || cmake_object_order_depends_target_test_queuearrt
+  DEP_FILE = prj.test\CMakeFiles\test_queuearrt.dir\test_queuearrt.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = prj.test\CMakeFiles\test_queuearrt.dir
+  OBJECT_FILE_DIR = prj.test\CMakeFiles\test_queuearrt.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_queuearrt
+
+
+#############################################
+# Link the executable prj.test\bin.dbg\test_queuearrt.exe
+
+build prj.test/bin.dbg/test_queuearrt.exe: CXX_EXECUTABLE_LINKER__test_queuearrt_Debug prj.test/CMakeFiles/test_queuearrt.dir/test_queuearrt.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lqueuearrt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = prj.test\CMakeFiles\test_queuearrt.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = prj.test\bin.dbg\test_queuearrt.exe
+  TARGET_IMPLIB = prj.test\libtest_queuearrt.dll.a
+  TARGET_PDB = test_queuearrt.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_queuelstt
+
+
+#############################################
+# Order-only phony target for test_queuelstt
+
+build cmake_object_order_depends_target_test_queuelstt: phony || prj.test/CMakeFiles/test_queuelstt.dir
+
+build prj.test/CMakeFiles/test_queuelstt.dir/test_queuelstt.cpp.obj: CXX_COMPILER__test_queuelstt_unscanned_Debug C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.test/test_queuelstt.cpp || cmake_object_order_depends_target_test_queuelstt
+  DEP_FILE = prj.test\CMakeFiles\test_queuelstt.dir\test_queuelstt.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = prj.test\CMakeFiles\test_queuelstt.dir
+  OBJECT_FILE_DIR = prj.test\CMakeFiles\test_queuelstt.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_queuelstt
+
+
+#############################################
+# Link the executable prj.test\bin.dbg\test_queuelstt.exe
+
+build prj.test/bin.dbg/test_queuelstt.exe: CXX_EXECUTABLE_LINKER__test_queuelstt_Debug prj.test/CMakeFiles/test_queuelstt.dir/test_queuelstt.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lqueuelstt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = prj.test\CMakeFiles\test_queuelstt.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = prj.test\bin.dbg\test_queuelstt.exe
+  TARGET_IMPLIB = prj.test\libtest_queuelstt.dll.a
+  TARGET_PDB = test_queuelstt.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_stackarrt
+
+
+#############################################
+# Order-only phony target for test_stackarrt
+
+build cmake_object_order_depends_target_test_stackarrt: phony || prj.test/CMakeFiles/test_stackarrt.dir
+
+build prj.test/CMakeFiles/test_stackarrt.dir/test_stackarrt.cpp.obj: CXX_COMPILER__test_stackarrt_unscanned_Debug C$:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/prj.test/test_stackarrt.cpp || cmake_object_order_depends_target_test_stackarrt
+  DEP_FILE = prj.test\CMakeFiles\test_stackarrt.dir\test_stackarrt.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = prj.test\CMakeFiles\test_stackarrt.dir
+  OBJECT_FILE_DIR = prj.test\CMakeFiles\test_stackarrt.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_stackarrt
+
+
+#############################################
+# Link the executable prj.test\bin.dbg\test_stackarrt.exe
+
+build prj.test/bin.dbg/test_stackarrt.exe: CXX_EXECUTABLE_LINKER__test_stackarrt_Debug prj.test/CMakeFiles/test_stackarrt.dir/test_stackarrt.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lstackarrt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = prj.test\CMakeFiles\test_stackarrt.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = prj.test\bin.dbg\test_stackarrt.exe
+  TARGET_IMPLIB = prj.test\libtest_stackarrt.dll.a
+  TARGET_PDB = test_stackarrt.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -1734,6 +1833,10 @@ build test_queuearr: phony prj.test/bin.dbg/test_queuearr.exe
 
 build test_queuearr.exe: phony prj.test/bin.dbg/test_queuearr.exe
 
+build test_queuearrt: phony prj.test/bin.dbg/test_queuearrt.exe
+
+build test_queuearrt.exe: phony prj.test/bin.dbg/test_queuearrt.exe
+
 build test_queuelst: phony prj.test/bin.dbg/test_queuelst.exe
 
 build test_queuelst.exe: phony prj.test/bin.dbg/test_queuelst.exe
@@ -1742,6 +1845,10 @@ build test_queuelstpr: phony prj.test/bin.dbg/test_queuelstpr.exe
 
 build test_queuelstpr.exe: phony prj.test/bin.dbg/test_queuelstpr.exe
 
+build test_queuelstt: phony prj.test/bin.dbg/test_queuelstt.exe
+
+build test_queuelstt.exe: phony prj.test/bin.dbg/test_queuelstt.exe
+
 build test_rational: phony prj.test/bin.dbg/test_rational.exe
 
 build test_rational.exe: phony prj.test/bin.dbg/test_rational.exe
@@ -1749,6 +1856,10 @@ build test_rational.exe: phony prj.test/bin.dbg/test_rational.exe
 build test_stackarr: phony prj.test/bin.dbg/test_stackarr.exe
 
 build test_stackarr.exe: phony prj.test/bin.dbg/test_stackarr.exe
+
+build test_stackarrt: phony prj.test/bin.dbg/test_stackarrt.exe
+
+build test_stackarrt.exe: phony prj.test/bin.dbg/test_stackarrt.exe
 
 build test_stacklst: phony prj.test/bin.dbg/test_stacklst.exe
 
@@ -1868,7 +1979,7 @@ build prj.lab/stacklstt/all: phony prj.lab/stacklstt/stacklstt
 #############################################
 # Folder: C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.test
 
-build prj.test/all: phony prj.test/bin.dbg/test_complex.exe prj.test/bin.dbg/test_rational.exe prj.test/bin.dbg/test_stackarr.exe prj.test/bin.dbg/test_stacklst.exe prj.test/bin.dbg/test_queuelst.exe prj.test/bin.dbg/test_queuelstpr.exe prj.test/bin.dbg/test_queuearr.exe prj.test/bin.dbg/test_stacklstt.exe
+build prj.test/all: phony prj.test/bin.dbg/test_complex.exe prj.test/bin.dbg/test_rational.exe prj.test/bin.dbg/test_stackarr.exe prj.test/bin.dbg/test_stacklst.exe prj.test/bin.dbg/test_queuelst.exe prj.test/bin.dbg/test_queuelstpr.exe prj.test/bin.dbg/test_queuearr.exe prj.test/bin.dbg/test_stacklstt.exe prj.test/bin.dbg/test_queuearrt.exe prj.test/bin.dbg/test_queuelstt.exe prj.test/bin.dbg/test_stackarrt.exe
 
 # =============================================================================
 # Built-in targets

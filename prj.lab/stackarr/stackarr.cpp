@@ -80,3 +80,18 @@ void StackArr::Clear() noexcept {
         top_ind_ = -1;
     }
 }
+
+StackArr::StackArr(StackArr&& rhs) noexcept
+        : data_(rhs.data_), capacity_(rhs.capacity_), top_ind_(rhs.top_ind_) {
+    rhs.data_ = nullptr;
+    rhs.capacity_ = 0;
+    rhs.top_ind_ = -1;
+}
+
+
+StackArr& StackArr::operator=(StackArr&& rhs) noexcept {
+    std::swap(data_, rhs.data_);
+    std::swap(capacity_, rhs.capacity_);
+    std::swap(top_ind_, rhs.top_ind_);
+    return *this;
+}
