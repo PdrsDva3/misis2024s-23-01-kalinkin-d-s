@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <memory>
+#include <sstream>
 
 class Command{
 public:
@@ -69,8 +71,13 @@ int main() {
         if (name == "^C") {
             break;
         }
+        std::istringstream essa(name);
+        std::string cmd;
+        int value;
+        essa >> cmd >> value;
+
+
+        std::unique_ptr<Command> cmdPtr;
 
     }
-
-    return 0;
 }
