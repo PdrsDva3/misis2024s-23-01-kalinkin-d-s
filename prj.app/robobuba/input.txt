@@ -1,0 +1,4 @@
+[1, 2, 3]
+LEFT 1
+RIGHT 1
+ADD 1
