@@ -19,21 +19,21 @@ public:
     void Pop() noexcept;//! done
 
     Complex& Top();//! done
-    const Complex& Top() const;//! done
+    [[nodiscard]] const Complex& Top() const;//! done
 
     void Clear() noexcept;//! done
-    int Size() const noexcept;//! done
-    bool IsEmpty() const noexcept;//! done
+    [[nodiscard]] int Size() const noexcept;//! done
+    [[nodiscard]] bool IsEmpty() const noexcept;//! done
 
 private:
-    void recapacity(int n_capacity);
-    bool isfull() noexcept;
+    void recapacity(const std::ptrdiff_t n_capacity);
+    const bool isfull() const noexcept;
 
     int head_ = -1;
     int tail_ = -1;
 
     int size_ = 0;
-    int capacity_ = 0;
+    std::ptrdiff_t capacity_ = 0;
 
     Complex* data_ = nullptr;
 };

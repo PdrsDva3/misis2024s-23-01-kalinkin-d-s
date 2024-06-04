@@ -64,6 +64,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/stackarrt/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/stacklstt/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/queuelst/cmake_install.cmake")
 endif()
 
@@ -79,11 +89,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/bitset/cmake_install.cmake")
+  include("C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/queuearrt/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/stacklstt/cmake_install.cmake")
+  include("C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/queuelstt/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Lol/CLionProjects/misis2024s-23-01-kalinkin-d-s/cmake-build-debug/prj.lab/bitset/cmake_install.cmake")
 endif()
 

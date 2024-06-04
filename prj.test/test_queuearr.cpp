@@ -54,17 +54,10 @@ TEST_CASE("queueList ctor") {
     CHECK(queue.IsEmpty());
 }
 
-//
-// Created by Alex on 27.02.2024.
-//
-#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include "doctest.h"
-
-#include <queuearr/queuearr.hpp>
 
 TEST_CASE("queuearr ctor") {
     QueueArr qa;
-    CHECK(qa.Size() == 0);
+    REQUIRE(qa.Size() == 0);
     qa.Push(Complex(5));
     CHECK(qa.Size() == 1);
     qa.Push(Complex(4));
