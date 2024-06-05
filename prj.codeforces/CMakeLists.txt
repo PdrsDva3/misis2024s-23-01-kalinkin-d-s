@@ -50,4 +50,6 @@ add_executable(1850c 1850c.cpp)
 
 add_executable(1872a 1872a.cpp)
 
-add_executable(1977a 1977.cpp)
+add_executable(1977a 1977a.cpp)
+
+add_executable(1974a 1974a.cpp)

@@ -45,15 +45,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="Add QueueLstPr library">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.app/robobuba/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.app/robobuba/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.app/robobuba/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.app/robobuba/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj.codeforces/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prj.codeforces/CMakeLists.txt" afterDir="false" />
-    </list>
+    <list default="true" id="ec78a947-0455-4d7e-bf0e-ae896f7da202" name="Changes" comment="Add QueueLstPr library" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -426,7 +418,7 @@
       <workItem from="1716890520340" duration="1826000" />
       <workItem from="1717491730009" duration="9094000" />
       <workItem from="1717587421146" duration="659000" />
-      <workItem from="1717594500358" duration="3492000" />
+      <workItem from="1717594500358" duration="3895000" />
     </task>
     <task id="LOCAL-00001" summary="Update: CMakeLists.txt">
       <option name="closed" value="true" />
