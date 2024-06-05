@@ -1,4 +1,6 @@
-[1, 2, 3]
-LEFT 1
 RIGHT 1
 ADD 1
+GO 2
+REV 1
+ADD 2
+GO 2

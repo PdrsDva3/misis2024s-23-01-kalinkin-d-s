@@ -49,3 +49,5 @@ add_executable(1734b 1734b.cpp)
 add_executable(1850c 1850c.cpp)
 
 add_executable(1872a 1872a.cpp)
+
+add_executable(1977a 1977.cpp)
