@@ -66,6 +66,20 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "PdrsDva3"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="bf288e8a-a395-4a62-9959-83a9636d8865" />
+        <option name="url" value="https://github.com/PdrsDva3/misis2024s-23-01-kalinkin-d-s.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -136,7 +150,7 @@
       <recent name="C:\Users\Lol\CLionProjects\misis2024s-23-01-kalinkin-d-s\prj.codeforces" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.1977a.cpp">
+  <component name="RunManager" selected="C/C++ File.1974a.cpp">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -161,12 +175,6 @@
       </method>
     </configuration>
     <configuration name="Cycle" type="CMakeDoctestTestRunConfigurationType" factoryName="doctest Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="test_queuearr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="test_queuearr" TEST_METHOD="Cycle" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="queuearr ctor" type="CMakeDoctestTestRunConfigurationType" factoryName="doctest Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="test_queuearr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" RUN_TARGET_NAME="test_queuearr" TEST_METHOD="queuearr ctor" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -309,6 +317,12 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="1974a.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="1974a.cpp" CONFIG_NAME="1974a.cpp">
+      <option name="sourceFile" value="prj.codeforces\1974a.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="1977a.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis2024s-23-01-kalinkin-d-s" TARGET_NAME="1977a.cpp" CONFIG_NAME="1977a.cpp">
       <option name="sourceFile" value="prj.codeforces\1977a.cpp" />
       <method v="2">
@@ -316,6 +330,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="C/C++ File.1974a.cpp" />
       <item itemvalue="C/C++ File.1977a.cpp" />
       <item itemvalue="CMake Application.robobuba" />
       <item itemvalue="CMake Application.timing_q" />
@@ -347,15 +362,14 @@
       <item itemvalue="Doctest.All in test_queuelst.cpp" />
       <item itemvalue="Doctest.All in test_queuearr.cpp" />
       <item itemvalue="Doctest.Cycle" />
-      <item itemvalue="Doctest.queuearr ctor" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.1974a.cpp" />
         <item itemvalue="C/C++ File.1977a.cpp" />
         <item itemvalue="Doctest.All in test_queuelst.cpp" />
         <item itemvalue="Doctest.Cycle" />
         <item itemvalue="Doctest.All in test_queuearr.cpp" />
-        <item itemvalue="Doctest.queuearr ctor" />
       </list>
     </recent_temporary>
   </component>
